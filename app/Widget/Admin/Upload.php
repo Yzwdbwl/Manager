@@ -8,7 +8,7 @@ use App\Services\Admin\Upload\Process as UploadManager;
 /**
  * 上传小组件
  *
- * @author jiang <mylampblog@163.com>
+ *  
  */
 class Upload
 {

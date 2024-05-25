@@ -30,7 +30,7 @@ var scrawl = function (options) {
             me._addBrushBarListener();//添加画笔大小处理
             me._addEraserBarListener();//添加橡皮大小处理
             me._addAddImgListener();//添加增添背景图片处理
-            me._addRemoveImgListenter();//删除背景图片处理
+            me._addRemoveImgListenter();//Delete背景图片处理
             me._addScalePicListenter();//添加缩放处理
             me._addClearSelectionListenter();//添加清楚选中状态处理
 

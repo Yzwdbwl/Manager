@@ -7,7 +7,7 @@ use App\Services\Admin\MCAManager;
 /**
  * 用户权限验证
  *
- * @author jiang <mylampblog@163.com>
+ * 
  */
 class Acl
 {

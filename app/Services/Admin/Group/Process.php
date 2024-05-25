@@ -10,7 +10,7 @@ use App\Services\Admin\BaseProcess;
 /**
  * 登录处理
  *
- * @author jiang <mylampblog@163.com>
+ *  
  */
 class Process extends BaseProcess
 {
@@ -47,8 +47,9 @@ class Process extends BaseProcess
         if( ! $this->acl) $this->acl = new Acl();
     }
 
+
     /**
-     * 增加新的用户组
+     * Add new user group
      *
      * @param string $data
      * @access public
@@ -64,7 +65,7 @@ class Process extends BaseProcess
     }
 
     /**
-     * 删除用户组
+     * Delete user group
      * 
      * @param string $data
      * @access public

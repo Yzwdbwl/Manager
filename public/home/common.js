@@ -48,17 +48,17 @@ function setformSubmitButton() {
  */
 function confirmNotic(content, callback) {
     var d = dialog({
-        title: '提示',
+        title: 'Hint',
         content: content,
-        okValue: '确定',
+        okValue: 'Ok',
         width: 250,
         ok: function () {
             if(typeof callback === 'function') {
-                this.title('提交中…');
+                this.title('Loading…');
                 callback();
             }
         },
-        cancelValue: '取消',
+        cancelValue: 'Cancel',
         cancel: function () {}
     });
     d.showModal();
@@ -72,9 +72,9 @@ function confirmNotic(content, callback) {
  */
 function alertNotic(content) {
     var d = dialog({
-        title: '提示',
+        title: 'Hint',
         content: content,
-        okValue: '确定',
+        okValue: 'Ok',
         width: 250,
         ok: function () {}
     });

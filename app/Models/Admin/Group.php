@@ -5,7 +5,7 @@ use App\Models\Admin\Base;
 /**
  * 用户组表模型
  *
- * @author jiang
+ * 
  */
 class Group extends Base
 {
@@ -93,7 +93,7 @@ class Group extends Base
     }
 
     /**
-     * 删除用户组
+     * Delete用户组
      *
      * @param array $id 权限功能的ID
      */

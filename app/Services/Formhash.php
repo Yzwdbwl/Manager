@@ -7,7 +7,7 @@ use Request, Session;
 /**
  * 主要用于防止表单篡改
  *
- * @author jiang <mylampblog@163.com>
+ *
  */
 class Formhash
 {

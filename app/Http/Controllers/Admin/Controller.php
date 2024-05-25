@@ -4,11 +4,7 @@ use Illuminate\Routing\Controller as BaseController;
 use App\Services\Formhash;
 use App\Services\Admin\ActionLog\Mark;
 
-/**
- * 父控制类类
- *
- * @author jiang <mylampblog@163.com>
- */
+
 abstract class Controller extends BaseController
 {
     /**

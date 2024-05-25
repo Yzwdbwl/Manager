@@ -3,7 +3,7 @@
 /**
  * 业务基类
  *
- * @author jiang
+ * 
  */
 
 namespace App\Services\Admin;

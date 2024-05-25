@@ -3,7 +3,7 @@
 /**
  * 树形结构处理类
  *
- * @author jiang
+ * 
  */
 class Tree
 {

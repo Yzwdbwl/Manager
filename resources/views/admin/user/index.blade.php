@@ -14,11 +14,11 @@
                         <thead>
                           <tr>
 
-                            <th>用户名</th>
-                            <th>用户组</th>
+                            <th>User name</th>
+                            <th>User group</th>
 
-                            <th>最后登录</th>
-                            <th>操作</th>
+                            <th>Last log in</th>
+                            <th>To do</th>
                           </tr>
                         </thead>
                         <tbody>

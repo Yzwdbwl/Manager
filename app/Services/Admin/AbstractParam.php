@@ -5,7 +5,7 @@ use ArrayAccess;
 /**
  * 参数容器
  *
- * @author jiang <mylampblog@163.com>
+ *
  */
 abstract class AbstractParam implements ArrayAccess
 {

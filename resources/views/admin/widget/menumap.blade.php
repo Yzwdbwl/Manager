@@ -14,7 +14,7 @@
     d: {
       width: 390,
       height: 390,
-      title: '功能地图'
+      title: 'Funtion Map'
     },
     content: '<div id="men-map" class="ztree" style="width:390px;height:390px;overflow: auto; padding-left:10px; padding-top:10px;"></div>',
     init: function() {

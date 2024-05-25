@@ -5,7 +5,7 @@ use App\Models\Admin\Base;
 /**
  * 权限用户(组)关系表模型
  *
- * @author jiang
+ *
  */
 class Access extends Base
 {
@@ -65,17 +65,17 @@ class Access extends Base
      * 
      * @param array $data 所需要插入的信息
      * @param intval $id 用户（组）的ID
-     * @param intval $allArr 需要删除的权限ID集
+     * @param intval $allArr 需要Delete的权限ID集
      * @param intval $type 1为用户组，2为用户
      * @return boolean true|false
      */
     public function setPermission(array $data, $id, $allArr, $type)
     {
         if( ! in_array($type, array(self::AP_USER, self::AP_GROUP))) return false;
-        //删除不存在的权限
+        //Delete不存在的权限
         $currentQuery = $this->from('permission')->select(array('id'))->get();
         $existPermissionIds = $currentQuery->toArray();
-        //删除旧的权限
+        //Delete旧的权限
         $del = $this->where('role_id', '=', intval($id))->where('type', '=', intval($type))->where(function($query) use ($allArr, $existPermissionIds)
         {
             $query->whereIn('permission_id', $allArr)->orWhere(function($query) use ($existPermissionIds)
@@ -103,7 +103,7 @@ class Access extends Base
     }
 
     /**
-     * 删除权限与用户或用户组的关联
+     * Delete权限与用户或用户组的关联
      * 
      * @return true|false
      */

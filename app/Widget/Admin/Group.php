@@ -8,7 +8,7 @@ use App\Services\Admin\Acl\Acl;
 /**
  * 用户组列表小组件
  *
- * @author jiang <mylampblog@163.com>
+ *  
  */
 class Group extends AbstractBase
 {
@@ -28,7 +28,7 @@ class Group extends AbstractBase
     }
 
     /**
-     * 用户组列表删除操作
+     * 用户组列表Delete操作
      *
      * @access public
      */
@@ -37,13 +37,13 @@ class Group extends AbstractBase
         $this->setCurrentAction('group', 'delete', 'foundation')->setData($data)->checkPermission(Acl::GROUP_LEVEL_TYPE_GROUP);
         $url = R('common', $this->module.'.'.$this->class.'.'.$this->function, ['id' => url_param_encode($data['id'])]);
         $html = $this->hasPermission ?
-                    '<a href="javascript:ajaxDelete(\''.$url.'\', \'sys-list\', \'确定吗？\');"><i class="fa fa-trash-o"></i></a>'
+                    '<a href="javascript:ajaxDelete(\''.$url.'\', \'sys-list\', \'Are you sure you want to delete?\');"><i class="fa fa-trash-o"></i></a>'
                         : '<i class="fa fa-trash-o" style="color:#ccc"></i>';
         return $html;
     }
 
     /**
-     * 用户组列表删除操作
+     * 用户组列表Delete操作
      *
      * @access public
      */
@@ -67,7 +67,7 @@ class Group extends AbstractBase
         $this->setCurrentAction('group', 'add', 'foundation')->checkPermission(Acl::GROUP_LEVEL_TYPE_GROUP);
         $url = R('common', $this->module.'.'.$this->class.'.'.$this->function);
         $html = $this->hasPermission ?
-                    '<div class="btn-group" style="float:right;"><a href="'.$url.'" title="增加新的用户组" class="btn btn-primary btn-xs"><span aria-hidden="true" class="glyphicon glyphicon-plus"></span>增加新的用户组</a></div>'
+                    '<div class="btn-group" style="float:right;"><a href="'.$url.'" title="Add new user group" class="btn btn-primary btn-xs"><span aria-hidden="true" class="glyphicon glyphicon-plus"></span>Add new user group</a></div>'
                         : '';
         return $html;
     }

@@ -6,7 +6,7 @@ use App\Models\Admin\Base;
 /**
  * 权限表模型
  *
- * @author jiang
+ * 
  */
 class Permission extends Base
 {
@@ -66,7 +66,7 @@ class Permission extends Base
     }
 
     /**
-     * 删除权限功能
+     * Delete权限功能
      *
      * @param array $id 权限功能的ID
      */

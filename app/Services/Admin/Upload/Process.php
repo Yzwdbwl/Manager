@@ -5,7 +5,7 @@ use App\Services\Admin\BaseProcess;
 /**
  * 上传处理
  *
- * @author jiang <mylampblog@163.com>
+ *  
  */
 class Process extends BaseProcess
 {

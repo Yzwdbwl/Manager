@@ -1,8 +1,8 @@
 <footer>
     <hr>
     <!-- Purchase a site license to remove this link from the footer: http://www.portnine.com/bootstrap-themes -->
-    <p class="pull-right">Power by Jiang</p>
-    <p>© 2015 最佳体验在IE9+,firefox,chrome</p>
+    <p class="pull-right">B01658325</p>
+    <p>WENXIN XU</p>
 </footer>
 <script type="text/javascript">
     $(function() {

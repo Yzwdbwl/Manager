@@ -52,7 +52,7 @@ class AuthenticatedSessionController extends Controller
     /**
      * Handle an incoming authentication request.
      */
-    public function store(LoginRequest $request): RedirectResponse
+    public function store(LoginRequest $request): RedirectR/esponse
     {
 
         $request->authenticate();
@@ -63,7 +63,7 @@ class AuthenticatedSessionController extends Controller
         SC::setUserPermissionSession($aclobj->getUserAccessPermission($userinfo));
         SC::setAllPermissionSession($this->permissionModel->getAllAccessPermission());
         $url=R('common', RouteServiceProvider::HOME);
-
+       
         return redirect()->intended($url);
     }
 

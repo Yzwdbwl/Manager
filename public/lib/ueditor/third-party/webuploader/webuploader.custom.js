@@ -1,11 +1,4 @@
-/*! WebUploader 0.1.2 */
 
-
-/**
- * @fileOverview 让内部各个部件的代码可以用[amd](https://github.com/amdjs/amdjs-api/wiki/AMD)模块定义方式组织起来。
- *
- * AMD API 内部的简单不完全实现，请忽略。只有当WebUploader被合并成一个文件的时候才会引入。
- */
 (function( root, factory ) {
     var modules = {},
 
@@ -807,7 +800,7 @@
              * 获取文件统计信息。返回一个包含一下信息的对象。
              * * `successNum` 上传成功的文件数
              * * `uploadFailNum` 上传失败的文件数
-             * * `cancelNum` 被删除的文件数
+             * * `cancelNum` 被Delete的文件数
              * * `invalidNum` 无效的文件数
              * * `queueNum` 还在队列中的文件数
              * @method getStats
@@ -1460,7 +1453,7 @@
                     promise = Base.when.apply( Base, dfds );
                     key = promise.pipe ? 'pipe' : 'then';
     
-                    // 很重要不能删除。删除了会死循环。
+                    // 很重要不能Delete。Delete了会死循环。
                     // 保证执行顺序。让callback总是在下一个tick中执行。
                     return promise[ key ](function() {
                                 var deferred = Base.Deferred(),
@@ -3597,7 +3590,7 @@
             };
     
             me.destory = function() {
-                // @todo 删除池子中的所有实例
+                // @todo Delete池子中的所有实例
                 return destory && destory.apply( this, arguments );
             };
         }

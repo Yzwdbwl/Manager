@@ -106,7 +106,7 @@ class User extends Authenticatable
     }
 
     /**
-     * 删除用户
+     * Delete用户
      *
      * @param array $id 权限功能的ID
      */

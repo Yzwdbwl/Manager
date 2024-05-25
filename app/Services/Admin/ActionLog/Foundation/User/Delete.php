@@ -8,12 +8,12 @@ use Request, Lang;
 /**
  * 用户操作日志
  *
- * @author jiang <mylampblog@163.com>
+ *  
  */
 class Delete extends AbstractActionLog
 {
     /**
-     * 删除用户时的日志记录
+     * Delete用户时的日志记录
      */
     public function handler()
     {

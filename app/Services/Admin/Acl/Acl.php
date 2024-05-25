@@ -3,7 +3,7 @@
 /**
  * 用户权限处理相关
  *
- * @author jiang <mylampblog@163.com>
+ * 
  */
 
 namespace App\Services\Admin\Acl;
@@ -234,7 +234,7 @@ class Acl
     public function isSystemManager($userObj = false)
     {
         if( ! $userObj) $userObj = SC::getLoginSession();
-
+     
         if($userObj->group_id == self::ADMIN_ROLE_ID or $this->isSuperSystemManager($userObj)) return true;
         return false;
     }

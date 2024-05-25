@@ -21,21 +21,21 @@
                   <div class="upload-content pad-10 on" id="div_swf_1">
                       <div>
                           <div id="addnew" class="addnew"></div>
-                          <div id="filePicker" class="select-upload-file-buttom">选择图片</div>
+                          <div id="filePicker" class="select-upload-file-buttom">Choose a picture</div>
                           <div style="float:left;">
                             <a class="btn btn-primary" id="upload-btn-save" style="font-size: 12px;" >
-                              立即上传
+                              Upload now
                             </a>
                           </div>
                           <div class="clear"></div>
-                          <div class="onShow" id="nameTip">最多上传 <font color="red"> <?php echo (isset($args['nums']) and $args['nums']) ? intval($args['nums']) : 1; ?></font> 个附件,单文件最大 <font color="red"><?php echo (isset($args['filesize']) and $args['filesize']) ? intval($args['filesize']) : 2;?> MB</font></div>
+                          <div class="onShow" id="nameTip">Up to <font color="red"> <?php echo (isset($args['nums']) and $args['nums']) ? intval($args['nums']) : 1; ?></font> attachment can be uploaded, and the maximum size of a single file is <font color="red"><?php echo (isset($args['filesize']) and $args['filesize']) ? intval($args['filesize']) : 2;?> MB</font></div>
                           <div class="bk3"></div>
 
-                          <div class="lh24">支持 <font style="font-family: Arial, Helvetica, sans-serif"><?php echo $args['alowexts']; ?></font> 格式</div><span style="display: none"><input type="checkbox" onclick="change_params()" value="1" id="watermark_enable"> 是否添加水印</span>
+                          <div class="lh24">Support <font style="font-family: Arial, Helvetica, sans-serif"><?php echo $args['alowexts']; ?></font> format</div><span style="display: none"><input type="checkbox" onclick="change_params()" value="1" id="watermark_enable"> 是否添加水印</span>
                       </div>
                       <div class="bk10"></div>
                       <fieldset id="swfupload" class="blue pad-10">
-                      <legend>列表</legend>
+                      <legend>List</legend>
                           <!--用来存放item-->
                         <div id="fileList" class="uploader-list"></div>
                       </fieldset>
@@ -89,7 +89,7 @@
                     var $li = $(
                             '<div id="' + file.id + '" class="file-item thumbnail" title="' + file.name + '">' +
                                 '<img>' +
-                                '<div class="' + file.id + '-remove web-upload-remove" title="删除"><i class="fa fa-times-circle"></i></div>'+
+                                '<div class="' + file.id + '-remove web-upload-remove" title="Delete"><i class="fa fa-times-circle"></i></div>'+
                             '</div>'
                             ),
                         $img = $li.find('img');
@@ -113,7 +113,7 @@
 
                 });
 
-                //删除图片
+                //Delete picture
                 uploader.on('fileDequeued', function (file) {
                     removeImageView(file);
                 });
@@ -126,7 +126,7 @@
 
                     // 避免重复创建
                     if ( !$percent.length ) {
-                        $percent = $('<p class="progress"><span class="text-show-yes">上传中...</span></p>')
+                        $percent = $('<p class="progress"><span class="text-show-yes">Loading...</span></p>')
                                 .appendTo( $li )
                                 .find('span');
                     }
@@ -151,7 +151,7 @@
                         $error = $('<div class="error"></div>').appendTo( $li );
                     }
 
-                    $error.text('上传失败');
+                    $error.text('upload failed');
                 });
 
                 uploader.on('error', function (code, file) {
@@ -160,21 +160,21 @@
                     }
                 });
 
-                // 完成上传完了，成功或者失败，先删除进度条。
+                // 完成上传完了，成功或者失败，先Delete进度条。
                 uploader.on( 'uploadComplete', function( file ) {
                     setTimeout(function(){
                       $( '#'+file.id ).find('.progress').remove();
                     }, 800 );
                 });
 
-                //删除图片
+                //Delete图片
                 function removeImage(file) {
                   $(document).on('click', '.' + file.id + '-remove', function(){
                     uploader.removeFile(file);
                   });
                 }
 
-                //删除图片view
+                //Delete picture view
                 function removeImageView(file) {
                   var $div = $('#' + file.id);
                   $div.remove();

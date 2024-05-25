@@ -7,7 +7,7 @@
         <div class="main-content">
 
           <ul class="nav nav-tabs">
-            <li class="active"><a href="#home" data-toggle="tab">填写用户信息</a></li>
+            <li class="active"><a href="#home" data-toggle="tab">Full in user information</a></li>
           </ul>
 
           <div class="row">
@@ -18,7 +18,7 @@
                   <form id="tab" target="hiddenwin" method="post" action="<?php echo $formUrl; ?>">
                       @csrf
                     <div class="form-group input-group-sm">
-                      <label>用户名</label>
+                      <label>User name</label>
                       <input type="text" <?php if(isset($id)) echo 'disabled'; ?> value="<?php if(isset($userInfo['name'])) echo $userInfo['name']; ?>" name="data[name]" class="form-control">
                       <?php if(isset($id)): ?>
                         <input type="hidden" value="<?php if(isset($userInfo['name'])) echo $userInfo['name']; ?>" name="data[name]" class="form-control">
@@ -26,13 +26,13 @@
                     </div>
 
                     <div class="form-group input-group-sm">
-                      <label>密码</label>
+                      <label>Password</label>
                       <input type="password" value="" name="data[password]" class="form-control">
                     </div>
 
 
                     <div class="form-group input-group-sm">
-                      <label>用户组</label>
+                      <label>User group</label>
                       <select name="data[group_id]" id="DropDownTimezone" class="form-control">
                         <?php if(isset($groupList) and is_array($groupList)): ?>
                           <?php foreach($groupList as $key => $value): ?>
@@ -42,7 +42,7 @@
                       </select>
                     </div>
                     <div class="btn-toolbar list-toolbar">
-                      <a class="btn btn-primary btn-sm sys-btn-submit" data-loading="保存中..." ><i class="fa fa-save"></i> <span class="sys-btn-submit-str">保存</span></a>
+                      <a class="btn btn-primary btn-sm sys-btn-submit" data-loading="Saving..." ><i class="fa fa-save"></i> <span class="sys-btn-submit-str">Save</span></a>
                     </div>
                     <?php if(isset($id)): ?>
                       <input name="data[id]" type="hidden" value="<?php echo $id;?>" />

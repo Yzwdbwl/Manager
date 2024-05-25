@@ -9,7 +9,7 @@ use Request, Lang;
 /**
  * 工作流用户关联管理操作日志
  *
- * @author jiang <mylampblog@163.com>
+ *  
  */
 class Relation extends AbstractActionLog
 {

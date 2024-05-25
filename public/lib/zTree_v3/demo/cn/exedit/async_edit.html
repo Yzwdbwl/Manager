@@ -48,7 +48,7 @@
 		function beforeRemove(treeId, treeNode) {
 			var zTree = $.fn.zTree.getZTreeObj("treeDemo");
 			zTree.selectNode(treeNode);
-			return confirm("确认删除 节点 -- " + treeNode.name + " 吗？");
+			return confirm("确认Delete 节点 -- " + treeNode.name + " 吗？");
 		}		
 		function beforeRename(treeId, treeNode, newName) {
 			if (newName.length == 0) {

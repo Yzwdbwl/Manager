@@ -13,10 +13,10 @@
                       <table class="table table-bordered table-striped">
                         <thead>
                           <tr>
-                            <th>用户组名</th>
-                            <th>备注</th>
-                            <th>状态</th>
-                            <th>操作</th>
+                            <th>User group name</th>
+                            <th>Remark</th>
+                            <th>State</th>
+                            <th>To do</th>
                           </tr>
                         </thead>
                         <tbody>

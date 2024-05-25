@@ -7,7 +7,7 @@ use App\Services\Admin\Acl\Acl;
 /**
  * 小组件
  *
- * @author jiang <mylampblog@163.com>
+ *  
  */
 Abstract class AbstractBase
 {

@@ -5,15 +5,13 @@ use App\Models\Home\SearchDict as SearchDictModel;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Pagination\LengthAwarePaginator;
 
-/**
- * 文章表模型
+/** *
  *
- * @author jiang
  */
 class Search extends Model
 {
     /**
-     * 文章未删除的标识
+     * 文章未Delete的标识
      */
     CONST IS_DELETE_NO = 1;
 
@@ -51,7 +49,6 @@ class Search extends Model
     private $dictDataCache;
 
     /**
-     * 搜索查询取得文章列表信息
      *
      * @return array
      */

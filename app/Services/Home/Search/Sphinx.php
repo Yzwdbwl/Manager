@@ -5,7 +5,7 @@ use Lang;
 /**
  * sphinx处理
  *
- * @author jiang <mylampblog@163.com>
+ *  
  */
 class Sphinx
 {

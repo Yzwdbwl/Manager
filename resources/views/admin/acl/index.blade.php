@@ -12,7 +12,7 @@
                   <div id="featurebar">
                     <ul class="nav">
                       <li class="active">
-                        <a href="<?php echo R('common', 'foundation.acl.index', ['pid' => '0' ]); ?>">所有功能</a>
+                        <a href="<?php echo R('common', 'foundation.acl.index', ['pid' => '0' ]); ?>">All funtions</a>
                       </li>
                       <?php
                         $son = App\Services\Admin\Tree::getSonKey();
@@ -35,12 +35,12 @@
                       <table class="table table-bordered table-striped">
                         <thead>
                           <tr>
-                            <th>排序</th>
-                            <th>功能名字</th>
-                            <th>功能代码（-为分隔线）</th>
-                            <th>显示为菜单?</th>
-                            <th>备注</th>
-                            <th>操作</th>
+                            <th>Rank</th>
+                            <th>Funtion name</th>
+                            <th>Function code (- is the separator line)</th>
+                            <th>Show as menu?</th>
+                            <th>Remark</th>
+                            <th>To do</th>
                           </tr>
                         </thead>
                         <tbody>

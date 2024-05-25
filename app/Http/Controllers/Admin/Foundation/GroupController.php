@@ -12,7 +12,7 @@ use App\Services\Admin\Acl\Acl;
 /**
  * 用户组管理
  *
- * @author jiang <mylampblog@163.com>
+ * 
  */
 class GroupController extends Controller
 {
@@ -61,7 +61,7 @@ class GroupController extends Controller
     }
 
     /**
-     * 删除用户组
+     * Delete用户组
      *
      * @access public
      */

@@ -20,7 +20,7 @@
             }
             else
             {
-                $html .= '<div class="comment-content"><span class="delete-reply-comment">此评论已经被删除了，请合理发言。</span></div>';
+                $html .= '<div class="comment-content"><span class="delete-reply-comment">此评论已经被Delete了，请合理发言。</span></div>';
             }
             $html .= '</div>';
             return $html;

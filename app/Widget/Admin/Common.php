@@ -9,7 +9,7 @@ use \App\Services\Admin\MCAManager;
 /**
  * 菜单小组件
  *
- * @author jiang <mylampblog@163.com>
+ *  
  */
 class Common
 {

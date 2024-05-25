@@ -7,7 +7,7 @@ use Request, Lang;
 /**
  * 工作流步骤管理操作日志
  *
- * @author jiang <mylampblog@163.com>
+ *  
  */
 class Add extends AbstractActionLog
 {

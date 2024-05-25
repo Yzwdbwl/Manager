@@ -9,7 +9,7 @@ use App\Services\Admin\BaseProcess;
 /**
  * 文章分类处理
  *
- * @author jiang <mylampblog@163.com>
+ *  
  */
 class Process extends BaseProcess
 {
@@ -56,7 +56,7 @@ class Process extends BaseProcess
     }
 
     /**
-     * 删除分类
+     * Delete分类
      * 
      * @param array $ids
      * @access public

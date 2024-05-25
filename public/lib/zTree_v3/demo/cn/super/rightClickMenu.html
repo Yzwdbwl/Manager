@@ -96,7 +96,7 @@
 			var nodes = zTree.getSelectedNodes();
 			if (nodes && nodes.length>0) {
 				if (nodes[0].children && nodes[0].children.length > 0) {
-					var msg = "要删除的节点是父节点，如果删除将连同子节点一起删掉。\n\n请确认！";
+					var msg = "要Delete的节点是父节点，如果Delete将连同子节点一起删掉。\n\n请确认！";
 					if (confirm(msg)==true){
 						zTree.removeNode(nodes[0]);
 					}
@@ -158,7 +158,7 @@ div#rMenu ul li{
 <div id="rMenu">
 	<ul>
 		<li id="m_add" onclick="addTreeNode();">增加节点</li>
-		<li id="m_del" onclick="removeTreeNode();">删除节点</li>
+		<li id="m_del" onclick="removeTreeNode();">Delete节点</li>
 		<li id="m_check" onclick="checkTreeNode(true);">Check节点</li>
 		<li id="m_unCheck" onclick="checkTreeNode(false);">unCheck节点</li>
 		<li id="m_reset" onclick="resetTree();">恢复zTree</li>

@@ -10,7 +10,7 @@ use App\Services\Admin\BaseProcess;
 /**
  * 权限菜单处理
  *
- * @author jiang <mylampblog@163.com>
+ *  
  */
 class Process extends BaseProcess
 {
@@ -66,7 +66,7 @@ class Process extends BaseProcess
     }
 
     /**
-     * 删除权限菜单
+     * Delete权限菜单
      * 
      * @param string $data
      * @access public

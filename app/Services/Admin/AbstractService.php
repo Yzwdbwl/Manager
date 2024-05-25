@@ -3,7 +3,7 @@
 /**
  * 服务基类
  *
- * @author jiang <mylampblog@163.com>
+ * 
  */
 abstract class AbstractService
 {

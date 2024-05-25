@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="zh-cn"><head>
     <meta charset="utf-8">
-    <title>管理系统</title>
+    <title>System Management</title>
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">

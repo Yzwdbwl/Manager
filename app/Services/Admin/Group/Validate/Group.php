@@ -6,7 +6,7 @@ use App\Services\Admin\BaseValidate;
 /**
  * 用户组列表表单验证
  *
- * @author jiang <mylampblog@163.com>
+ *  
  */
 class Group extends BaseValidate
 {

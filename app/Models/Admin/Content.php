@@ -5,7 +5,7 @@
 /**
  * 文章表模型
  *
- * @author jiang
+ *
  */
 class Content extends Base
 {
@@ -24,17 +24,17 @@ class Content extends Base
     protected $fillable = array('id', 'name', 'subtitle', 'other', 'create_at', 'content', 'is_delete', 'status');
 
     /**
-     * 文章未删除的标识
+     * 文章未Delete的标识
      */
     CONST IS_DELETE_NO = 1;
 
     /**
-     * 文章删除的标识
+     * 文章Delete的标识
      */
     CONST IS_DELETE_YES = 0;
 
     /**
-     * 取得未删除的信息
+     * 取得未Delete的信息
      *
      * @return array
      * @todo 数据量多时，查找属于指定分类，推荐位，标签三个的文章时使用redis集合交集处理，避免查询消耗。
@@ -92,7 +92,7 @@ class Content extends Base
     }
 
     /**
-     * 批量软删除
+     * 批量软Delete
      */
     public function solfDeleteContent(array $data, array $ids)
     {

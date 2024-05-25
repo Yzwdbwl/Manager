@@ -232,7 +232,7 @@ pre tt {
 <body>
 <h1>artDialog</h1>
 
-<p><a href="http://aui.github.io/artDialog/">首页</a> &gt; <a href="http://aui.github.io/artDialog/doc/index.html">文档与示例</a></p>
+<p><a href="http://aui.github.io/artDialog/">Front page</a> &gt; <a href="http://aui.github.io/artDialog/doc/index.html">文档与示例</a></p>
 
 <hr />
 
@@ -429,14 +429,14 @@ d.show(document.getElementById('quickref-bubble'));
 <p>1.确定与取消按钮：</p>
 
 <pre><code>var d = dialog({
-    title: '提示',
+    title: 'Be sure',
     content: '按钮回调函数返回 false 则不许关闭',
-    okValue: '确定',
+    okValue: 'Ok',
     ok: function () {
         this.title('提交中…');
         return false;
     },
-    cancelValue: '取消',
+    cancelValue: 'Cancel',
     cancel: function () {}
 });
 d.show();
@@ -573,7 +573,7 @@ d.showModal();
 
 <p>可接收一个返回值，可以参见 <a href="#property-returnValue">returnValue</a>。</p>
 
-<p><strong>注意</strong>：<code>close()</code>方法只隐藏对话框，不会在 DOM 中删除，删除请使用<code>remove()</code>方法。</p>
+<p><strong>注意</strong>：<code>close()</code>方法只隐藏对话框，不会在 DOM 中Delete，Delete请使用<code>remove()</code>方法。</p>
 
 <h3><span id="api-remove">remove()</span></h3>
 
@@ -680,7 +680,7 @@ d.show();
 
 <h3><span id="api-removeEventListener">removeEventListener(type, callback)</span></h3>
 
-<p>删除事件。</p>
+<p>Delete事件。</p>
 
 <h3><span id="api-dialog-get">dialog.get(id)</span></h3>
 

@@ -674,10 +674,10 @@ var utils = UE.utils = {
     },
 
     /**
-     * 删除字符串str的首尾空格
+     * Delete字符串str的首尾空格
      * @method trim
-     * @param { String } str 需要删除首尾空格的字符串
-     * @return { String } 删除了首尾的空格后的字符串
+     * @param { String } str 需要Delete首尾空格的字符串
+     * @return { String } Delete了首尾的空格后的字符串
      * @example
      * ```javascript
      *
@@ -1731,7 +1731,7 @@ var dtd = dom.dtd = (function() {
         //不能认为是空的元素
         $isNotEmpty : _({table:1,ul:1,ol:1,dl:1,iframe:1,area:1,base:1,col:1,hr:1,img:1,embed:1,input:1,link:1,meta:1,param:1,h1:1,h2:1,h3:1,h4:1,h5:1,h6:1}),
 
-        //如果没有子节点就可以删除的元素列表，像span,a
+        //如果没有子节点就可以Delete的元素列表，像span,a
         $removeEmpty : _({a:1,abbr:1,acronym:1,address:1,b:1,bdo:1,big:1,cite:1,code:1,del:1,dfn:1,em:1,font:1,i:1,ins:1,label:1,kbd:1,q:1,s:1,samp:1,small:1,span:1,strike:1,strong:1,sub:1,sup:1,tt:1,u:1,'var':1}),
 
         $removeEmptyBlock : _({'p':1,'div':1}),
@@ -2223,10 +2223,10 @@ var domUtils = dom.domUtils = {
     },
 
     /**
-     * 删除节点node及其下属的所有节点
+     * Delete节点node及其下属的所有节点
      * @method remove
-     * @param { Node } node 需要删除的节点对象
-     * @return { Node } 返回刚删除的节点对象
+     * @param { Node } node 需要Delete的节点对象
+     * @return { Node } 返回刚Delete的节点对象
      * @example
      * ```html
      * <div id="test">
@@ -2241,11 +2241,11 @@ var domUtils = dom.domUtils = {
      */
 
     /**
-     * 删除节点node，并根据keepChildren的值决定是否保留子节点
+     * Delete节点node，并根据keepChildren的值决定是否保留子节点
      * @method remove
-     * @param { Node } node 需要删除的节点对象
+     * @param { Node } node 需要Delete的节点对象
      * @param { Boolean } keepChildren 是否需要保留子节点
-     * @return { Node } 返回刚删除的节点对象
+     * @return { Node } 返回刚Delete的节点对象
      * @example
      * ```html
      * <div id="test">
@@ -2403,7 +2403,7 @@ var domUtils = dom.domUtils = {
      * 清除node节点左右连续为空的兄弟inline节点
      * @method clearEmptySibling
      * @param { Node } node 执行的节点对象， 如果该节点的左右连续的兄弟节点是空的inline节点，
-     * 则这些兄弟节点将被删除
+     * 则这些兄弟节点将被Delete
      * @grammar UE.dom.domUtils.clearEmptySibling(node,ignoreNext)  //ignoreNext指定是否忽略右边空节点
      * @grammar UE.dom.domUtils.clearEmptySibling(node,ignoreNext,ignorePre)  //ignorePre指定是否忽略左边空节点
      * @example
@@ -2433,7 +2433,7 @@ var domUtils = dom.domUtils = {
      * @method clearEmptySibling
      * @param { Node } node 执行的节点对象， 如果该节点的左右连续的兄弟节点是空的inline节点，
      * @param { Boolean } ignoreNext 是否忽略忽略对右边的兄弟节点的操作
-     * 则这些兄弟节点将被删除
+     * 则这些兄弟节点将被Delete
      * @see UE.dom.domUtils.clearEmptySibling(Node)
      */
 
@@ -2444,7 +2444,7 @@ var domUtils = dom.domUtils = {
      * @param { Node } node 执行的节点对象， 如果该节点的左右连续的兄弟节点是空的inline节点，
      * @param { Boolean } ignoreNext 是否忽略忽略对右边的兄弟节点的操作
      * @param { Boolean } ignorePre 是否忽略忽略对左边的兄弟节点的操作
-     * 则这些兄弟节点将被删除
+     * 则这些兄弟节点将被Delete
      * @see UE.dom.domUtils.clearEmptySibling(Node)
      */
     clearEmptySibling:function (node, ignoreNext, ignorePre) {
@@ -2920,9 +2920,9 @@ var domUtils = dom.domUtils = {
     },
 
     /**
-     * 删除node节点下首尾两端的空白文本子节点
+     * Deletenode节点下首尾两端的空白文本子节点
      * @method trimWhiteTextNode
-     * @param { Element } node 需要执行删除操作的元素对象
+     * @param { Element } node 需要执行Delete操作的元素对象
      * @example
      * ```javascript
      *      var node = document.createElement("div");
@@ -3190,10 +3190,10 @@ var domUtils = dom.domUtils = {
                     node.style.KhtmlUserSelect = 'none';
     },
     /**
-     * 删除节点node上的指定属性名称的属性
+     * Delete节点node上的指定属性名称的属性
      * @method  removeAttributes
-     * @param { Node } node 需要删除属性的节点对象
-     * @param { String } attrNames 可以是空格隔开的多个属性名称，该操作将会依次删除相应的属性
+     * @param { Node } node 需要Delete属性的节点对象
+     * @param { String } attrNames 可以是空格隔开的多个属性名称，该操作将会依次Delete相应的属性
      * @example
      * ```html
      * <div id="wrap">
@@ -3212,10 +3212,10 @@ var domUtils = dom.domUtils = {
      */
 
     /**
-     * 删除节点node上的指定属性名称的属性
+     * Delete节点node上的指定属性名称的属性
      * @method  removeAttributes
-     * @param { Node } node 需要删除属性的节点对象
-     * @param { Array } attrNames 需要删除的属性名数组
+     * @param { Node } node 需要Delete属性的节点对象
+     * @param { Array } attrNames 需要Delete的属性名数组
      * @example
      * ```html
      * <div id="wrap">
@@ -3376,10 +3376,10 @@ var domUtils = dom.domUtils = {
         return utils.transUnitToPx(utils.fixColor(styleName, value));
     },
     /**
-     * 删除元素element指定的className
+     * Delete元素element指定的className
      * @method removeClasses
-     * @param { Element } ele 需要删除class的元素节点
-     * @param { String } classNames 需要删除的className， 多个className之间以空格分开
+     * @param { Element } ele 需要Deleteclass的元素节点
+     * @param { String } classNames 需要Delete的className， 多个className之间以空格分开
      * @example
      * ```html
      * <span id="test" class="test1 test2 test3">xxx</span>
@@ -3397,10 +3397,10 @@ var domUtils = dom.domUtils = {
      */
 
     /**
-     * 删除元素element指定的className
+     * Delete元素element指定的className
      * @method removeClasses
-     * @param { Element } ele 需要删除class的元素节点
-     * @param { Array } classNames 需要删除的className数组
+     * @param { Element } ele 需要Deleteclass的元素节点
+     * @param { Array } classNames 需要Delete的className数组
      * @example
      * ```html
      * <span id="test" class="test1 test2 test3">xxx</span>
@@ -3551,10 +3551,10 @@ var domUtils = dom.domUtils = {
         evt.preventDefault ? evt.preventDefault() : (evt.returnValue = false);
     },
     /**
-     * 删除元素element指定的样式
+     * Delete元素element指定的样式
      * @method removeStyle
-     * @param { Element } element 需要删除样式的元素
-     * @param { String } styleName 需要删除的样式名
+     * @param { Element } element 需要Delete样式的元素
+     * @param { String } styleName 需要Delete的样式名
      * @example
      * ```html
      * <span id="test" style="color: red; background: blue;"></span>
@@ -3682,7 +3682,7 @@ var domUtils = dom.domUtils = {
         }
     },
     /**
-     * 删除_moz_dirty属性
+     * Delete_moz_dirty属性
      * @private
      * @method removeDirtyAttr
      */
@@ -4458,7 +4458,7 @@ var fillCharReg = new RegExp(domUtils.fillChar, 'g');
     };
 
     /**
-     * 删除fillData
+     * DeletefillData
      * @param doc
      * @param excludeNode
      */
@@ -4529,7 +4529,7 @@ var fillCharReg = new RegExp(domUtils.fillChar, 'g');
         },
 
         /**
-         * 删除当前选区范围中的所有内容
+         * Delete当前选区范围中的所有内容
          * @method deleteContents
          * @remind 执行完该操作后， 当前Range对象变成了闭合状态
          * @return { UE.dom.Range } 当前操作的Range对象
@@ -5315,7 +5315,7 @@ var fillCharReg = new RegExp(domUtils.fillChar, 'g');
         },
 
         /**
-         *  调整当前range的边界到书签位置，并删除该书签对象所标记的位置内的节点
+         *  调整当前range的边界到书签位置，并Delete该书签对象所标记的位置内的节点
          *  @method  moveToBookmark
          *  @param { BookMark } bookmark createBookmark所创建的标签对象
          *  @return { UE.dom.Range } 当前range对象
@@ -7867,7 +7867,7 @@ var fillCharReg = new RegExp(domUtils.fillChar, 'g');
          * @return { Object | String } 根据路径返回语言资源的Json格式对象或者语言字符串
          * @example
          * ```javascript
-         * editor.getLang('contextMenu.delete'); //如果当前是中文，那返回是的是'删除'
+         * editor.getLang('contextMenu.delete'); //如果当前是中文，那返回是的是'Delete'
          * ```
          */
         getLang: function (path) {
@@ -9623,7 +9623,7 @@ var filterNode = UE.filterNode = function () {
                        }
                    }
                 }else{
-                    //如果不在名单里扣出子节点并删除该节点,cdata除外
+                    //如果不在名单里扣出子节点并Delete该节点,cdata除外
                     if(dtd.$cdata[node.tagName]){
                         node.parentNode.removeChild(node)
                     }else{
@@ -10411,7 +10411,7 @@ UE.commands['inserthtml'] = {
                 }
 
             }
-            //加上true因为在删除表情等时会删两次，第一次是删的fillData
+            //加上true因为在Delete表情等时会删两次，第一次是删的fillData
             try{
                 range.select(true);
             }catch(e){}
@@ -11271,7 +11271,7 @@ UE.plugins['justify']=function(){
 
 // plugins/font.js
 /**
- * 字体颜色,背景色,字号,字体,下划线,删除线
+ * 字体颜色,背景色,字号,字体,下划线,Delete线
  * @file
  * @since 1.2.6.1
  */
@@ -11369,7 +11369,7 @@ UE.plugins['justify']=function(){
  */
 
 /**
- * 字体下划线,与删除线互斥
+ * 字体下划线,与Delete线互斥
  * @command underline
  * @method execCommand
  * @param { String } cmd 命令字符串
@@ -11380,7 +11380,7 @@ UE.plugins['justify']=function(){
  */
 
 /**
- * 字体删除线,与下划线互斥
+ * 字体Delete线,与下划线互斥
  * @command strikethrough
  * @method execCommand
  * @param { String } cmd 命令字符串
@@ -12636,7 +12636,7 @@ UE.plugins['paragraph'] = function() {
                     tmpRange.insertNode( para );
 
                     var parent = para.parentNode;
-                    //如果para上一级是一个block元素且不是body,td就删除它
+                    //如果para上一级是一个block元素且不是body,td就Delete它
                     if ( block( parent ) && !domUtils.isBody( para.parentNode ) && utils.indexOf(notExchange,parent.tagName)==-1) {
                         //存储dir,style
                         if(!(sourceCmdName && sourceCmdName == 'customstyle')){
@@ -12649,7 +12649,7 @@ UE.plugins['paragraph'] = function() {
                             parent.style.padding && !para.style.padding && (para.style.padding = parent.style.padding);
                         }
 
-                        //trace:1706 选择的就是h1-6要删除
+                        //trace:1706 选择的就是h1-6要Delete
                         if(attrs && /h\d/i.test(parent.tagName) && !/h\d/i.test(para.tagName) ){
                             domUtils.setAttributes(parent,attrs);
                             if(sourceCmdName && sourceCmdName == 'customstyle' && attrs.style){
@@ -14798,7 +14798,7 @@ UE.plugins['pasteplain'] = function(){
                 node.parentNode.removeChild(node,true)
             }
             return {
-                //直接删除及其字节点内容
+                //直接Delete及其字节点内容
                 '-' : 'script style object iframe embed input select',
                 'p': {$:{}},
                 'br':{$:{}},
@@ -15896,7 +15896,7 @@ UE.plugins['list'] = function () {
                         if (startParent.tagName.toLowerCase() == tag && nodeStyle == style) {
                             for (var i = 0, ci, tmpFrag = me.document.createDocumentFragment(); ci = frag.firstChild;) {
                                 if(domUtils.isTagNode(ci,'ol ul')){
-//                                  删除时，子列表不处理
+//                                  Delete时，子列表不处理
 //                                  utils.each(domUtils.getElementsByTagName(ci,'li'),function(li){
 //                                        while(li.firstChild){
 //                                            tmpFrag.appendChild(li.firstChild);
@@ -16342,7 +16342,7 @@ UE.plugins['list'] = function () {
                     //还原getContent方法
                     me.getContent = oldGetContent;
                     var first = me.body.firstChild;
-                    //trace:1106 都删除空了，下边会报错，所以补充一个p占位
+                    //trace:1106 都Delete空了，下边会报错，所以补充一个p占位
                     if(!first){
                         me.body.innerHTML = '<p>'+(browser.ie?'':'<br/>')+'</p>';
                         first = me.body.firstChild;
@@ -16666,7 +16666,7 @@ UE.plugins['keystrokes'] = function() {
                 return;
             }
             var start,end;
-            //避免按两次删除才能生效的问题
+            //避免按两次Delete才能生效的问题
             if(rng.collapsed && rng.inFillChar()){
                 start = rng.startContainer;
 
@@ -16680,7 +16680,7 @@ UE.plugins['keystrokes'] = function() {
                 }
             }
 
-            //解决选中control元素不能删除的问题
+            //解决选中control元素不能Delete的问题
             if (start = rng.getClosedNode()) {
                 me.fireEvent('saveScene');
                 rng.setStartBefore(start);
@@ -16690,7 +16690,7 @@ UE.plugins['keystrokes'] = function() {
                 domUtils.preventDefault(evt);
                 return;
             }
-            //阻止在table上的删除
+            //阻止在table上的Delete
             if (!browser.ie) {
                 start = domUtils.findParentByTagName(rng.startContainer, 'table', true);
                 end = domUtils.findParentByTagName(rng.endContainer, 'table', true);
@@ -16749,7 +16749,7 @@ UE.plugins['keystrokes'] = function() {
             domUtils.preventDefault(evt)
         }
         //trace:1634
-        //ff的del键在容器空的时候，也会删除
+        //ff的del键在容器空的时候，也会Delete
         if(browser.gecko && keyCode == 46){
             range = me.selection.getRange();
             if(range.collapsed){
@@ -16795,7 +16795,7 @@ UE.plugins['keystrokes'] = function() {
                         }
                     }
                 }
-                //处理当删除到body时，要重新给p标签展位
+                //处理当Delete到body时，要重新给p标签展位
                 if(domUtils.isBody(rng.startContainer)){
                     var tmpNode = domUtils.createElement(me.document,'p',{
                         'innerHTML' : browser.ie ? domUtils.fillChar : '<br/>'
@@ -16805,7 +16805,7 @@ UE.plugins['keystrokes'] = function() {
             }
 
 
-            //chrome下如果删除了inline标签，浏览器会有记忆，在输入文字还是会套上刚才删除的标签，所以这里再选一次就不会了
+            //chrome下如果Delete了inline标签，浏览器会有记忆，在输入文字还是会套上刚才Delete的标签，所以这里再选一次就不会了
             if( !collapsed && (rng.startContainer.nodeType == 3 || rng.startContainer.nodeType == 1 && domUtils.isEmptyBlock(rng.startContainer))){
                 if(browser.ie){
                     var span = rng.document.createElement('span');
@@ -18152,7 +18152,7 @@ UE.plugins['video'] = function (){
                     }
                 }
             }
-            //当框选后删除行或者列后撤销，需要重建选区。
+            //当框选后Delete行或者列后撤销，需要重建选区。
             var tds = domUtils.getElementsByTagName(this.table, "td"),
                 selectTds = [];
             utils.each(tds, function (td) {
@@ -18204,7 +18204,7 @@ UE.plugins['video'] = function (){
             return rowIndex < this.rowsNum && this.table.rows[rowIndex].cells[cellIndex] || null;
         },
         /**
-         * 删除单元格
+         * Delete单元格
          */
         deleteCell:function (cell, rowIndex) {
             rowIndex = typeof rowIndex == 'number' ? rowIndex : cell.parentNode.rowIndex;
@@ -18459,7 +18459,7 @@ UE.plugins['video'] = function (){
                 range = this.getCellsRange(leftTopCell, this.getCell(index[this.rowsNum - 1][info.colIndex].rowIndex, index[this.rowsNum - 1][info.colIndex].cellIndex));
             }
 
-            // 删除剩余的Cells
+            // Delete剩余的Cells
             var cells = this.getCells(range);
             for(var i= 0,ci;ci=cells[i++];){
                 if (ci !== leftTopCell) {
@@ -18553,7 +18553,7 @@ UE.plugins['video'] = function (){
             return row;
         },
         /**
-         * 删除一行单元格
+         * Delete一行单元格
          * @param rowIndex
          */
         deleteRow:function (rowIndex) {
@@ -18609,7 +18609,7 @@ UE.plugins['video'] = function (){
                 td.rowSpan--;
             });
             row.parentNode.removeChild(row);
-            //浏览器方法本身存在bug,采用自定义方法删除
+            //浏览器方法本身存在bug,采用自定义方法Delete
             //this.table.deleteRow(rowIndex);
             this.update();
         },
@@ -20526,7 +20526,7 @@ UE.plugins['table'] = function () {
 
     });
     /**
-     * 删除obj的宽高style，改成属性宽高
+     * Deleteobj的宽高style，改成属性宽高
      * @param obj
      * @param replaceToProperty
      */
@@ -23869,7 +23869,7 @@ UE.plugin.register('autosave', function (){
         }
 
         if ( !editor.hasContents() ) {
-            //这里不能调用命令来删除， 会造成事件死循环
+            //这里不能调用命令来Delete， 会造成事件死循环
             saveKey && me.removePreferences( saveKey );
             return;
         }
@@ -24594,14 +24594,14 @@ UE.plugin.register('serverparam', function (){
              * ```
              */
             /**
-             * 修改服务器提交的额外参数列表,删除指定项
+             * 修改服务器提交的额外参数列表,Delete指定项
              * @command serverparam
              * @method execCommand
              * @param { String } cmd 命令字符串
              * @param { String } key 要清除的属性
              * @example
              * ```javascript
-             * editor.execCommand('serverparam', 'name'); //删除属性name
+             * editor.execCommand('serverparam', 'name'); //Delete属性name
              * ```
              */
             /**

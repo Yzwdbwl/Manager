@@ -7,12 +7,12 @@ use Request, Lang;
 /**
  * 工作流操作日志
  *
- * @author jiang <mylampblog@163.com>
+ *  
  */
 class Delete extends AbstractActionLog
 {
     /**
-     * 删除工作流时的日志记录
+     * Delete工作流时的日志记录
      */
     public function handler()
     {

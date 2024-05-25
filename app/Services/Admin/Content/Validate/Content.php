@@ -6,7 +6,7 @@ use App\Services\Admin\BaseValidate;
 /**
  * 表单验证
  *
- * @author jiang <mylampblog@163.com>
+ *  
  */
 class Content extends BaseValidate
 {

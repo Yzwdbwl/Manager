@@ -145,7 +145,7 @@ $.extend(Popup.prototype, {
     /** 是否开启固定定位[*] */
     fixed: false,
 
-    /** 判断对话框是否删除[*] */
+    /** 判断对话框是否Delete[*] */
     destroyed: true,
 
     /** 判断对话框是否显示 */
@@ -411,7 +411,7 @@ $.extend(Popup.prototype, {
 
 
     /**
-     * 删除事件
+     * Delete事件
      * @param   {String}    事件类型
      * @param   {Function}  监听函数
      */
@@ -1044,7 +1044,7 @@ $.extend(prototype, {
      */
 
     /**
-     * 删除事件
+     * Delete事件
      * @param   {String}    事件类型
      * @param   {Function}  监听函数
      * @name artDialog.prototype.removeEventListener

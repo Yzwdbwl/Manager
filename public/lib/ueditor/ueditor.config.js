@@ -93,7 +93,7 @@
 
         //,readonly : false //编辑器初始化结束后,编辑区域是否是只读的，默认是false
 
-        //,autoClearEmptyNode : true //getContent时，是否删除空的inlineElement节点（包括嵌套的情况）
+        //,autoClearEmptyNode : true //getContent时，是否Delete空的inlineElement节点（包括嵌套的情况）
 
         //启用自动保存
         //,enableAutoSave: true
@@ -118,7 +118,7 @@
         //        node.setStyle();
         //    }
         //    return {
-        //        //直接删除及其字节点内容
+        //        //直接Delete及其字节点内容
         //        '-' : 'script style object iframe embed input select',
         //        'p': {$:{}},
         //        'br':{$:{}},
@@ -262,7 +262,7 @@
         //,tabNode:'&nbsp;'
 
         //removeFormat
-        //清除格式时可以删除的标签和属性
+        //清除格式时可以Delete的标签和属性
         //removeForamtTags标签
         //,removeFormatTags:'b,big,code,del,dfn,em,font,i,ins,kbd,q,samp,small,span,strike,strong,sub,sup,tt,u,var'
         //removeFormatAttributes属性

@@ -7,7 +7,7 @@ use App\Services\Admin\SC;
 /**
  * 主要用来储存当前请求的模块、类、函数
  *
- * @author jiang <mylampblog@163.com>
+ * 
  */
 class MCAManager {
 

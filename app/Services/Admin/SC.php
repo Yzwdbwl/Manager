@@ -47,7 +47,7 @@ class SC {
     }
 
     /**
-     * 删除登录的session
+     * Delete登录的session
      * 
      * @return void
      */
@@ -81,7 +81,7 @@ class SC {
     }
 
     /**
-     * 删除密钥
+     * Delete密钥
      * 
      * @return void
      */

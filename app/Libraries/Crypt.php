@@ -5,7 +5,7 @@ namespace App\Libraries;
 /**
  * 加密
  *
- * @author jiang <mylampblog@163.com>
+ * 
  */
 class Crypt
 {

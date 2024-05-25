@@ -1123,7 +1123,7 @@
              * 获取文件统计信息。返回一个包含一下信息的对象。
              * * `successNum` 上传成功的文件数
              * * `progressNum` 上传中的文件数
-             * * `cancelNum` 被删除的文件数
+             * * `cancelNum` 被Delete的文件数
              * * `invalidNum` 无效的文件数
              * * `uploadFailNum` 上传失败的文件数
              * * `queueNum` 还在队列中的文件数
@@ -1799,7 +1799,7 @@
                     promise = Base.when.apply( Base, dfds );
                     key = promise.pipe ? 'pipe' : 'then';
     
-                    // 很重要不能删除。删除了会死循环。
+                    // 很重要不能Delete。Delete了会死循环。
                     // 保证执行顺序。让callback总是在下一个 tick 中执行。
                     return promise[ key ](function() {
                                 var deferred = Base.Deferred(),
@@ -1878,7 +1878,7 @@
         };
     
         /**
-         * 删除插件，只有在注册时指定了名字的才能被删除。
+         * Delete插件，只有在注册时指定了名字的才能被Delete。
          * @grammar Uploader.unRegister(name);
          * @param  {string} name 组件名字
          * @method Uploader.unRegister
@@ -1900,7 +1900,7 @@
                 return;
             }
             
-            // 删除指定的插件。
+            // Delete指定的插件。
             for ( var i = widgetClass.length; i--; ) {
                 if ( widgetClass[i]._name === name ) {
                     widgetClass.splice(i, 1)
@@ -2795,7 +2795,7 @@
             },
     
             /**
-             * 在队列中删除文件。
+             * 在队列中Delete文件。
              * @grammar removeFile( file ) => Array
              * @method removeFile
              * @param {File} 文件对象。
@@ -4384,7 +4384,7 @@
             };
     
             me.destroy = function() {
-                // @todo 删除池子中的所有实例
+                // @todo Delete池子中的所有实例
                 return destroy && destroy.apply( this, arguments );
             };
         }

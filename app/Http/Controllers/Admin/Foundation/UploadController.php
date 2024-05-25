@@ -9,7 +9,7 @@ use App\Http\Controllers\Admin\Controller;
 /**
  * 弹出窗口上传
  *
- * @author jiang <mylampblog@163.com>
+ * 
  */
 class UploadController extends Controller
 {

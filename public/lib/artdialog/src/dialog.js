@@ -278,7 +278,7 @@ $.extend(prototype, {
      */
 
     /**
-     * 删除事件
+     * Delete事件
      * @param   {String}    事件类型
      * @param   {Function}  监听函数
      * @name artDialog.prototype.removeEventListener

@@ -11,7 +11,7 @@
                 <form method="get" action="" class="form-inline">
                   <div class="form-group input-group-sm f-g">
                     <label for="search-keyword"></label>
-                    <input type="text" value="<?php if(isset($search['keyword'])) echo $search['keyword']; ?>" name="keyword" id="search-keyword" class="form-control" placeholder="请输入关键词" >
+                    <input type="text" value="<?php if(isset($search['keyword'])) echo $search['keyword']; ?>" name="keyword" id="search-keyword" class="form-control" placeholder="Please enter a keyword" >
                   </div>
 
 
@@ -22,7 +22,7 @@
 
 
                   <div class="form-group btn-group-sm f-g">
-                    <input class="btn btn-default" type="submit" value="查询">
+                    <input class="btn btn-default" type="submit" value="Search">
                   </div>
                 </form>
               </div>
@@ -33,13 +33,13 @@
                       <table class="table table-bordered table-striped">
                         <thead>
                           <tr>
-                            <th>选择</th>
-                            <th width="50%">标题</th>
-                            <th>副标题</th>
-                            <th>作者</th>
-                            <th>创作时间</th>
-                            <th>状态</th>
-                            <th width="70">操作</th>
+                            <th>choose</th>
+                            <th width="50%">title</th>
+                            <th>side title</th>
+                            <th>author</th>
+                            <th>time</th>
+                            <th>state</th>
+                            <th width="70">active</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -85,10 +85,10 @@
         $('.pl-delete').click(function() {
             var ids = plSelectValue('ids');
             if(ids.length == 0) {
-                alertNotic('请先选择需要删除的文章');
+                alertNotic('Please select the article that needs to be deleted first');
                 return false;
             }
-            confirmNotic('确定删除吗？', function() {
+            confirmNotic('confirm to delete?', function() {
               var url = '<?php echo R('common', 'blog.content.delete'); ?>';
               var params = {id:ids};
               Atag_Ajax_Submit(url, params, 'POST', $('.pl-delete'), 'ajax-reload');

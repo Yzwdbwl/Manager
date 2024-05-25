@@ -775,7 +775,7 @@ baidu.flash._Base = (function(){
  * @param {String} buttonUrl 按钮图片不背景
  * @param {String|Function} selectFileCallback 选择文件的回调
  * @param {String|Function} exceedFileCallback文件超出限制的最大体积时的回调
- * @param {String|Function} deleteFileCallback 删除文件的回调
+ * @param {String|Function} deleteFileCallback Delete文件的回调
  * @param {String|Function} startUploadCallback 开始上传某个文件时的回调
  * @param {String|Function} uploadCompleteCallback 某个文件上传完成的回调
  * @param {String|Function} uploadErrorCallback 某个文件上传失败的回调
@@ -944,9 +944,9 @@ baidu.flash.fileUploader = baidu.flash.fileUploader || function(options){
     };
 
     /**
-     * 删除文件
+     * Delete文件
      * @public
-     * @param {Number|Array} [index] 要删除的index，不传则全部删除
+     * @param {Number|Array} [index] 要Delete的index，不传则全部Delete
      * @param {Function} callBack
      * */
     me.deleteFile = function(index, callBack){
@@ -1063,7 +1063,7 @@ baidu.sio._createScriptTag = function(scr, url, charset){
 };
 
 /**
- * 删除script的属性，再删除script标签，以解决修复内存泄漏的问题
+ * Deletescript的属性，再Deletescript标签，以解决修复内存泄漏的问题
  * 
  * @param {HTMLElement} src script节点
  */

@@ -7,12 +7,12 @@ use Illuminate\Pagination\LengthAwarePaginator;
 /**
  * 文章表模型
  *
- * @author jiang
+ *
  */
 class Content extends Model
 {
     /**
-     * 文章未删除的标识
+     * 文章未Delete的标识
      */
     CONST IS_DELETE_NO = 1;
 

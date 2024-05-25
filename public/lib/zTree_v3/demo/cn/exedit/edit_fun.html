@@ -58,7 +58,7 @@
 		function beforeRemove(treeId, treeNode) {
 			className = (className === "dark" ? "":"dark");
 			showLog("[ "+getTime()+" beforeRemove ]&nbsp;&nbsp;&nbsp;&nbsp; " + treeNode.name);
-			return confirm("确认删除 节点 -- " + treeNode.name + " 吗？");
+			return confirm("确认Delete 节点 -- " + treeNode.name + " 吗？");
 		}
 		function onRemove(e, treeId, treeNode) {
 			showLog("[ "+getTime()+" onRemove ]&nbsp;&nbsp;&nbsp;&nbsp; " + treeNode.name);
@@ -168,7 +168,7 @@
 					&nbsp;&nbsp;&nbsp;&nbsp;[ <a id="addParent" href="#" title="增加父节点" onclick="return false;">增加父节点</a> ]
 					&nbsp;&nbsp;&nbsp;&nbsp;[ <a id="addLeaf" href="#" title="增加叶子节点" onclick="return false;">增加叶子节点</a> ]
 					&nbsp;&nbsp;&nbsp;&nbsp;[ <a id="edit" href="#" title="编辑名称" onclick="return false;">编辑名称</a> ]<br/>
-					&nbsp;&nbsp;&nbsp;&nbsp;[ <a id="remove" href="#" title="删除节点" onclick="return false;">删除节点</a> ]
+					&nbsp;&nbsp;&nbsp;&nbsp;[ <a id="remove" href="#" title="Delete节点" onclick="return false;">Delete节点</a> ]
 					&nbsp;&nbsp;&nbsp;&nbsp;[ <a id="clearChildren" href="#" title="清空子节点" onclick="return false;">清空子节点</a> ]<br/>
 					remove log:<br/>
 					<ul id="log" class="log"></ul></p>

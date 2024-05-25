@@ -145,7 +145,7 @@ $.extend(Popup.prototype, {
     /** 是否开启固定定位[*] */
     fixed: false,
 
-    /** 判断对话框是否删除[*] */
+    /** 判断对话框是否Delete[*] */
     destroyed: true,
 
     /** 判断对话框是否显示 */
@@ -411,7 +411,7 @@ $.extend(Popup.prototype, {
 
 
     /**
-     * 删除事件
+     * Delete事件
      * @param   {String}    事件类型
      * @param   {Function}  监听函数
      */
@@ -1044,7 +1044,7 @@ $.extend(prototype, {
      */
 
     /**
-     * 删除事件
+     * Delete事件
      * @param   {String}    事件类型
      * @param   {Function}  监听函数
      * @name artDialog.prototype.removeEventListener
@@ -1564,7 +1564,7 @@ dialog.oncreate = function (api) {
         api.addEventListener('beforeremove', function () {
 
             // 重要！需要重置iframe地址，否则下次出现的对话框在IE6、7无法聚焦input
-            // IE删除iframe后，iframe仍然会留在内存中出现上述问题，置换src是最容易解决的方法
+            // IEDeleteiframe后，iframe仍然会留在内存中出现上述问题，置换src是最容易解决的方法
             $iframe.attr('src', 'about:blank').remove();
 
 

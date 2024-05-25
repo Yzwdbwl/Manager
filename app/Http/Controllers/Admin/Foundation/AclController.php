@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Admin\Foundation;
 use App\Http\Controllers\Admin\Controller;
 use App\Models\Admin\Permission as PermissionModel;
 use App\Models\Admin\Access as AccessModel;
-use App\Models\Admin\User as UserModel;
+use App\Models\User as UserModel;
 use App\Models\Admin\Group as GroupModel;
 use Request, Lang, Session;
 use App\Services\Admin\Acl\Process as AclActionProcess;
@@ -17,7 +17,7 @@ use App\Services\Admin\SC;
 /**
  * 权限菜单相关
  *
- * @author jiang <mylampblog@163.com>
+ *
  */
 class AclController extends Controller
 {
@@ -68,10 +68,10 @@ class AclController extends Controller
     }
 
     /**
-     * 删除权限功能
+     * Delete权限功能
      *
      * @access public
-     * @todo 只能删除自己所拥有的权限？有没有必要做？
+     * @todo 只能Delete自己所拥有的权限？有没有必要做？
      */
     public function delete()
     {

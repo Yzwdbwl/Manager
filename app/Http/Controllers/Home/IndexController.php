@@ -4,15 +4,13 @@ use App\Models\Home\Content as ContentModel;
 use Request;
 
 /**
- * 博客首页
+ * blog front page
  *
- * @author jiang <mylampblog@163.com>
+ * 
  */
 class IndexController extends Controller
 {
-    /**
-     * 博客首页
-     */
+    
     public function index()
     {
         $object = new \stdClass();

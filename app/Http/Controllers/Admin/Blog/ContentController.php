@@ -13,13 +13,11 @@ use App\Http\Controllers\Admin\Controller;
 /**
  * 登录相关
  *
- * @author jiang <mylampblog@163.com>
+ * 
  */
 class ContentController extends Controller
 {
-    /**
-     * 显示首页
-     */
+    
     public function index()
     {
         Session::flashInput(['http_referer' => Request::fullUrl()]);
@@ -67,7 +65,7 @@ class ContentController extends Controller
     }
 
     /**
-     * 删除文章
+     * Delete文章
      *
      * @access public
      */

@@ -13,8 +13,8 @@
                       <table class="table table-bordered table-striped">
                         <thead>
                           <tr>
-                            <th width="70">选择</th>
-                            <th>评论内容</th>
+                            <th width="70">Choose</th>
+                            <th>Comment content</th>
                             <th width="80">所属文章</th>
                             <th width="100">评论人</th>
                             <th width="150">评论时间</th>
@@ -54,10 +54,10 @@
       $('.pl-delete').click(function() {
           var ids = plSelectValue('ids');
           if(ids.length == 0) {
-              alertNotic('请先选择需要删除的评论');
+              alertNotic('Please select the comment you want to delete first');
               return false;
           }
-          confirmNotic('确定删除吗？', function() {
+          confirmNotic('Are you sure delete?', function() {
             var url = '<?php echo R('common', 'blog.comment.delete'); ?>';
             var params = {id:ids};
             Atag_Ajax_Submit(url, params, 'POST', $('.pl-delete'), 'ajax-reload');
@@ -70,25 +70,25 @@
     $(document).on('click', '.comment-reply', function() {
         var _id = $(this).attr('data-id');
         __d = dialog({
-          title: '回复评论',
+          title: 'Reply to comment',
           id: 'comment-reply',
           fixed: true,
           width: 500,
           height: 350,
-          okValue: '确定',
+          okValue: 'Yes',
           ok: function() {
             var _this = this;
-            _this.title('提交中...');
+            _this.title('Loading...');
             $('#article-comment-reply-form').submit();
             setTimeout(function(){
-              _this.title('回复评论');
+              _this.title('Reply to comment');
             },1000)
             return false;
           },
           onshow: function () {
             loadComment(_id, this);
           },
-          cancelValue: '取消',
+          cancelValue: 'Cancel',
           cancel: function () {}
         });
         __d.showModal();

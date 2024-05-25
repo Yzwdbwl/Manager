@@ -6,7 +6,7 @@ use App\Services\Home\BaseValidate;
 /**
  * 功能表单验证
  *
- * @author jiang <mylampblog@163.com>
+ *  
  */
 class Comment extends BaseValidate
 {

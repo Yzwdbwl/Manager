@@ -2,7 +2,7 @@
     <div class="content col-md-9">
         <?php echo widget('Home.Common')->top(); ?>
         <?php if( (isset($object->category) and ! empty($object->category)) or (isset($object->tag) and ! empty($object->tag)) or (isset($object->keyword))): ?>
-            <div class="tag-category-title" style="color:#ccc;padding-bottom:10px;">以下为分类（标签）的筛选数据：</div>
+            <div class="tag-category-title" style="color:#ccc;padding-bottom:10px;">The following is the filtered data for categories (tags):</div>
         <?php endif; ?>
         <div class="main-content">
           <div class="row">
@@ -19,13 +19,13 @@
                                     </a>
                                 </h3>
                                 <p class="text-sm p_h_info">
-                                  <span class="span_h_info">副标题：</span><?php echo $value['subtitle']; ?> &nbsp&nbsp&nbsp
-                                  <span class="span_h_info">作者：</span><?php echo $value['other']; ?> &nbsp&nbsp&nbsp
-                                  <span class="span_h_info">发布时间：</span><?php echo $value['create_at']; ?></p>
+                                  <span class="span_h_info">side title：</span><?php echo $value['subtitle']; ?> &nbsp&nbsp&nbsp
+                                  <span class="span_h_info">author：</span><?php echo $value['other']; ?> &nbsp&nbsp&nbsp
+                                  <span class="span_h_info">time：</span><?php echo $value['create_at']; ?></p>
                                 <p class="p_h_summary">
                                   <?php echo $value['summary']; ?>
                                 </p>
-                                <p><a href="<?php echo route('home', ['class' => 'index', 'action' => 'detail', 'id' => $value['id']]); ?>" class="btn btn-default btn-xs">查看详情</a></p>
+                                <p><a href="<?php echo route('home', ['class' => 'index', 'action' => 'detail', 'id' => $value['id']]); ?>" class="btn btn-default btn-xs">look more</a></p>
                             </div>
                         </div>
                     </div>

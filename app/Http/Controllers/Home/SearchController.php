@@ -4,15 +4,11 @@ use App\Models\Home\Search as SearchModel;
 use App\Services\Home\Search\Process;
 use Request;
 
-/**
- * 博客首页-搜索
- *
- * @author jiang <mylampblog@163.com>
- */
+
 class SearchController extends Controller
 {
     /**
-     * 博客首页
+     * 
      */
     public function index()
     {

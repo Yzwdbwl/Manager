@@ -58,18 +58,18 @@ function setformSubmitButton() {
  */
 function confirmNotic(content, callback) {
     var d = dialog({
-        title: '提示',
+        title: 'Hint',
         fixed: true,
         content: content,
-        okValue: '确定',
+        okValue: 'Ok',
         width: 250,
         ok: function () {
             if(typeof callback === 'function') {
-                this.title('提交中…');
+                this.title('Loading…');
                 callback();
             }
         },
-        cancelValue: '取消',
+        cancelValue: 'Cancel',
         cancel: function () {}
     });
     d.showModal();
@@ -99,7 +99,7 @@ function alertNotic(content, callback) {
 }
 
 /**
- * 异步删除
+ * 异步Delete
  * 
  * @param  {string} url       执行的url
  * @param  {string} replaceID 用于刷新列表的容器id
@@ -180,9 +180,9 @@ function uploaddialog(uploadid, title, itemId, funcName, args, authkey, upload_u
         width: '500',
         height: '420',
         padding: 0,
-        okValue: '确定',
+        okValue: 'Ok',
         ok: function () {
-            this.title('提交中…');
+            this.title('Loading…');
             if (funcName) {
                 funcName.apply(this, [uploadid, itemId]);
             }
@@ -190,7 +190,7 @@ function uploaddialog(uploadid, title, itemId, funcName, args, authkey, upload_u
             removeDialogIframe(uploadid);
             return false;
         },
-        cancelValue: '取消',
+        cancelValue: 'Cancel',
         cancel: function () {
             this.close().remove();
             removeDialogIframe(uploadid);
@@ -201,7 +201,7 @@ function uploaddialog(uploadid, title, itemId, funcName, args, authkey, upload_u
 }
 
 /**
- * artdialog关闭后还会有一个iframe，删除它
+ * artdialog关闭后还会有一个iframe，Delete它
  * @param  {[string]} uploadid dialog插件的id
  * @return {[void]}
  */

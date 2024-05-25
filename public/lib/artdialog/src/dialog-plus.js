@@ -68,7 +68,7 @@ dialog.oncreate = function (api) {
         api.addEventListener('beforeremove', function () {
 
             // 重要！需要重置iframe地址，否则下次出现的对话框在IE6、7无法聚焦input
-            // IE删除iframe后，iframe仍然会留在内存中出现上述问题，置换src是最容易解决的方法
+            // IEDeleteiframe后，iframe仍然会留在内存中出现上述问题，置换src是最容易解决的方法
             $iframe.attr('src', 'about:blank').remove();
 
 

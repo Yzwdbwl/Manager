@@ -16,7 +16,7 @@ use App\Services\Admin\BaseProcess;
 /**
  * 文章处理
  *
- * @author jiang <mylampblog@163.com>
+ *  
  */
 class Process extends BaseProcess
 {
@@ -153,9 +153,9 @@ class Process extends BaseProcess
         return $insertObject->id;
     }
     /**
-     * 删除文章，因为使用了事务，如果没有成功请手动抛出异常
+     * Delete文章，因为使用了事务，如果没有成功请手动抛出异常
      *
-     * @param array $ids 要删除的文章的id
+     * @param array $ids 要Delete的文章的id
      * @access public
      * @return boolean true|false
      */

@@ -12,7 +12,7 @@ use App\Http\Controllers\Admin\Controller;
 /**
  * 用户相关
  *
- * @author jiang <mylampblog@163.com>
+ * 
  */
 class UserController extends Controller
 {
@@ -79,7 +79,7 @@ class UserController extends Controller
     }
 
     /**
-     * 删除用户
+     * Delete用户
      *
      * @access public
      */

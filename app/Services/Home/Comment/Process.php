@@ -8,7 +8,7 @@ use App\Services\Home\BaseProcess;
 /**
  * 评论相关处理
  *
- * @author jiang <mylampblog@163.com>
+ *  
  */
 class Process extends BaseProcess
 {

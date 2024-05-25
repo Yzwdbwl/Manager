@@ -1,7 +1,7 @@
 <footer>
     <hr>
-    <p class="pull-right">Power by Jiang</p>
-    <p>© 2015</p>
+    <p class="pull-right">B01658325</p>
+    <p>WENXIN XU</p>
 </footer>
 <script src="<?php echo loadStatic('/lib/bootstrap/js/bootstrap.js'); ?>"></script>
 <script type="text/javascript">

@@ -11,7 +11,7 @@ use App\Services\Admin\BaseProcess;
 /**
  * 用户处理
  *
- * @author jiang <mylampblog@163.com>
+ *  
  */
 class Process extends BaseProcess
 {
@@ -49,7 +49,7 @@ class Process extends BaseProcess
     }
 
     /**
-     * 增加新的用户
+     *Add new user
      *
      * @param object $data
      * @access public
@@ -69,7 +69,7 @@ class Process extends BaseProcess
     }
 
     /**
-     * 删除用户
+     * Delete用户
      *
      * @param string $data
      * @access public

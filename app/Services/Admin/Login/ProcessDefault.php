@@ -10,7 +10,7 @@ use Request;
 /**
  * 登录处理
  *
- * @author jiang <mylampblog@163.com>
+ *  
  */
 class ProcessDefault extends AbstractProcess {
 
@@ -122,7 +122,7 @@ class ProcessDefault extends AbstractProcess {
     }
 
     /**
-     * 删除密钥
+     * Delete密钥
      * 
      * @return void
      */

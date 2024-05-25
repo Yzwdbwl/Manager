@@ -1,6 +1,6 @@
 #	artDialog
 
-[首页](http://aui.github.io/artDialog/) &gt; [文档与示例](http://aui.github.io/artDialog/doc/index.html)
+
 
 ============================
 
@@ -155,7 +155,7 @@ var d = dialog({
 		this.title('提交中…');
 		return false;
 	},
-	cancelValue: '取消',
+	cancelValue: 'Cancel',
 	cancel: function () {}
 });
 d.show();
@@ -297,7 +297,7 @@ d.showModal();
 
 可接收一个返回值，可以参见 [returnValue](#property-returnValue)。
 
-**注意**：``close()``方法只隐藏对话框，不会在 DOM 中删除，删除请使用``remove()``方法。
+**注意**：``close()``方法只隐藏对话框，不会在 DOM 中Delete，Delete请使用``remove()``方法。
 
 ###	[remove()](id:api-remove)
 
@@ -411,7 +411,7 @@ dialog({
 
 ###	[removeEventListener(type, callback)](id:api-removeEventListener)
 
-删除事件。
+Delete事件。
 
 ###	[dialog.get(id)](id:api-dialog-get)
 
@@ -551,10 +551,10 @@ Function, Boolean
 
 ```
 dialog({
-	title: '消息',
+	title: 'message',
 	ok: function () {},
 	cancel: function () {
-		alert('取消');
+		alert('cancel');
 	}
 }).show();
 ```

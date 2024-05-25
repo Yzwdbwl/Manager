@@ -5,7 +5,7 @@ use App\Services\Admin\ActionLog\Mark;
 /**
  * 操作日志
  *
- * @author jiang <mylampblog@163.com>
+ *
  */
 abstract class AbstractActionLog
 {
