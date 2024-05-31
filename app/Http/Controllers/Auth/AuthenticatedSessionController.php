@@ -17,41 +17,25 @@ use Illuminate\View\View;
 class AuthenticatedSessionController extends Controller
 {
 
-    /**
-     * 用户模型
-     *
-     * @var object
-     */
+    
     private $userModel;
 
-    /**
-     * 权限模型
-     *
-     * @var object
-     */
+    
     private $permissionModel;
 
-    /**
-     * 初始化
-     *
-     * @access public
-     */
+    
     public function __construct()
     {
         if( ! $this->userModel) $this->userModel = new UserModel();
         if( ! $this->permissionModel) $this->permissionModel = new PermissionModel();
     }
-    /**
-     * Display the login view.
-     */
+    
     public function create(): View
     {
         return view('auth.login');
     }
 
-    /**
-     * Handle an incoming authentication request.
-     */
+   
     public function store(LoginRequest $request): RedirectR/esponse
     {
 

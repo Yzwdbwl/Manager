@@ -4,16 +4,10 @@ use App\Services\Admin\AbstractActionLog;
 use App\Events\Admin\ActionLog;
 use Request, Lang;
 
-/**
- * 工作流管理操作日志
- *
- *  
- */
+
 class Add extends AbstractActionLog
 {
-    /**
-     * 增加工作流时的日志记录
-     */
+    
     public function handler()
     {
         if(Request::method() !== 'POST') return false;

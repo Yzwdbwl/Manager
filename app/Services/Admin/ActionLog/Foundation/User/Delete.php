@@ -5,16 +5,10 @@ use App\Events\Admin\ActionLog;
 use App\Models\Admin\User;
 use Request, Lang;
 
-/**
- * 用户操作日志
- *
- *  
- */
+
 class Delete extends AbstractActionLog
 {
-    /**
-     * Delete用户时的日志记录
-     */
+    
     public function handler()
     {
         if( ! $this->isLog()) return false;

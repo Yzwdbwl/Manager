@@ -4,11 +4,7 @@ use Closure;
 use App\Services\Admin\Acl\Acl as AclManager;
 use App\Services\Admin\MCAManager;
 
-/**
- * 用户权限验证
- *
- * 
- */
+
 class Acl
 {
     /**

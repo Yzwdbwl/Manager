@@ -6,16 +6,10 @@ use App\Services\Admin\Workflow\Process;
 use App\Models\Admin\User;
 use Request, Lang;
 
-/**
- * 工作流用户关联管理操作日志
- *
- *  
- */
+
 class Relation extends AbstractActionLog
 {
-    /**
-     * 增加工作流步骤用户关联时的日志记录
-     */
+    
     public function handler()
     {
         if(Request::method() !== 'POST') return false;

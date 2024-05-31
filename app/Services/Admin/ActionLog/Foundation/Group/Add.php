@@ -4,16 +4,10 @@ use App\Services\Admin\AbstractActionLog;
 use App\Events\Admin\ActionLog;
 use Request, Lang;
 
-/**
- * 用户操作日志
- *
- *  
- */
+
 class Add extends AbstractActionLog
 {
-    /**
-     * 增加用户组时的日志记录
-     */
+    
     public function handler()
     {
         if(Request::method() !== 'POST') return false;

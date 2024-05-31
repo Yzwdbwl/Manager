@@ -1,29 +1,12 @@
 <?php
 
-/**
- * JS class.
- *
- * Please known that this class is come from cd 6.2.stable
- * visit this the website bellow for more information.
- * http://www.zentao.net/
- *
- * lasted modify by jiang at 2014-9-8
- * 
- * @package Libraries
- */
+
 
 namespace App\Libraries;
 
 class Js
 {
-   /**
-     * Import a js file.
-     * 
-     * @param  string $url 
-     * @param  string $version 
-     * @access public
-     * @return string
-     */
+   
     public static function import($url, $version = '')
     {
         if(!$version) $version = filemtime(__FILE__);

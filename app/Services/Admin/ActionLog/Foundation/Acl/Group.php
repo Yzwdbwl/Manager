@@ -5,16 +5,10 @@ use App\Events\Admin\ActionLog;
 use App\Models\Admin\Group as GroupModel;
 use Request, Lang;
 
-/**
- * 用户操作日志
- *
- *  
- */
+
 class Group extends AbstractActionLog
 {
-    /**
-     * 对用户组权限的日志记录
-     */
+   
     public function handler()
     {
         if(Request::method() !== 'POST') return false;

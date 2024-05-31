@@ -25,9 +25,7 @@ class IndexController extends Controller
         return response(view('home.index.index', compact('articleList', 'page', 'object')))->header('Cache-Control', 'max-age='.$cacheSecond)->header('Expires', $time);
     }
 
-    /**
-     * 文章内页
-     */
+    
     public function detail()
     {
         $articleId = (int) Request::input('id');

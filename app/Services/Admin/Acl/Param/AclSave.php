@@ -2,11 +2,7 @@
 
 use App\Services\Admin\AbstractParam;
 
-/**
- * 权限操作有关的参数容器，固定参数，方便分离处理。
- *
- *  
- */
+
 class AclSave extends AbstractParam
 {
     protected $name;
