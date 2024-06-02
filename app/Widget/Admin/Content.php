@@ -6,14 +6,14 @@ use App\Widget\Admin\AbstractBase;
 use App\Models\Admin\Position as PositionModel;
 
 /**
- * 文章列表小组件
+ *        
  *
  *  
  */
 class Content extends AbstractBase
 {
     /**
-     * 文章列表编辑操作
+     *         
      *
      * @access public
      */
@@ -28,7 +28,7 @@ class Content extends AbstractBase
     }
 
     /**
-     * 文章列表删除操作
+     *         
      *
      * @access public
      */
@@ -43,7 +43,7 @@ class Content extends AbstractBase
     }
 
     /**
-     * 面包屑中的按钮
+     *        
      *
      * @access public
      */
@@ -58,7 +58,7 @@ class Content extends AbstractBase
     }
 
     /**
-     * 批量Delete
+     *   Delete
      *
      * @access public
      */
@@ -72,7 +72,7 @@ class Content extends AbstractBase
     }
 
     /**
-     * 文章推到推荐位
+     *        
      *
      * @access public
      */

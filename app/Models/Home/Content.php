@@ -5,38 +5,38 @@ use Illuminate\Pagination\Paginator;
 use Illuminate\Pagination\LengthAwarePaginator;
 
 /**
- * 文章表模型
+ *      
  *
  *
  */
 class Content extends Model
 {
     /**
-     * 文章未Delete的标识
+     *    Delete   
      */
     CONST IS_DELETE_NO = 1;
 
     /**
-     * 文章发布的标识
+     *        
      */
     CONST STATUS_YES = 1;
 
     /**
-     * 文章数据表名
+     *       
      *
      * @var string
      */
     protected $table = 'artice';
 
     /**
-     * 表前缀
+     *    
      *
      * @var string
      */
     private $prefix;
 
     /**
-     * 取得文章列表信息
+     *         
      *
      * @return array
      */
@@ -64,9 +64,9 @@ class Content extends Model
     }
 
     /**
-     * 取得一篇文章主表和副表的信息
+     *               
      *
-     * @param int $articleId 文章的ID
+     * @param int $articleId    ID
      * @return array
      */
     public function getContentDetailByArticleId($articleId)

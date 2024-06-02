@@ -3,14 +3,14 @@
 use ArrayAccess;
 
 /**
- * 参数容器
+ *     
  *
  *
  */
 abstract class AbstractParam implements ArrayAccess
 {
     /**
-     * 用来保存传进来的值
+     *          
      * 
      * @var array
      */
@@ -62,7 +62,7 @@ abstract class AbstractParam implements ArrayAccess
     }
     
     /**
-     * 返回该类的数组形式
+     *          
      * 
      * @return array
      */
@@ -99,9 +99,9 @@ abstract class AbstractParam implements ArrayAccess
     }
 
     /**
-     * 把值赋予到参数容器中
+     *           
      * 
-     * @param array $attributes 传入的值数值
+     * @param array $attributes       
      */
     public function setAttributes($attributes)
     {

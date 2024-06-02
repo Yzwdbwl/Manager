@@ -5,33 +5,33 @@ use Session, Cookie, Request;
 class SC {
 
     /**
-     * 用户登录的session key
+     *      session key
      */
     CONST LOGIN_MARK_SESSION_KEY = 'LOGIN_MARK_SESSION';
 
     /**
-     * 密钥 session key
+     *    session key
      */
     CONST PUBLIC_KEY = 'LOGIN_PROCESS_PUBLIC';
 
     /**
-     * 设置用户权限的key
+     *        key
      *
      * @var string
      */
     CONST USER_ACL_SESSION_KEY = 'USER_ACL_SESSION';
 
     /**
-     * 所有的权限的key
+     *       key
      *
      * @var string
      */
     CONST ALL_PERMISSION_KEY = 'ALL_PERMISSION_KEY';
 
     /**
-     * 设置登录成功的session
+     *        session
      * 
-     * @param array $userInfo 用户的相关信息
+     * @param array $userInfo        
      */
     static public function setLoginSession($userInfo)
     {
@@ -39,7 +39,7 @@ class SC {
     }
 
     /**
-     * 返回登录成功的session
+     *        session
      */
     static public function getLoginSession()
     {
@@ -47,7 +47,7 @@ class SC {
     }
 
     /**
-     * Delete登录的session
+     * Delete   session
      * 
      * @return void
      */
@@ -59,9 +59,9 @@ class SC {
     }
 
     /**
-     * 设置并返回加密密钥
+     *          
      *
-     * @return string 密钥
+     * @return string   
      */
     static public function setPublicKey()
     {
@@ -71,9 +71,9 @@ class SC {
     }
 
     /**
-     * 取得刚才设置的加密密钥
+     *            
      * 
-     * @return string 密钥
+     * @return string   
      */
     static public function getPublicKey()
     {
@@ -81,7 +81,7 @@ class SC {
     }
 
     /**
-     * Delete密钥
+     * Delete  
      * 
      * @return void
      */
@@ -93,7 +93,7 @@ class SC {
     }
 
     /**
-     * 把用户的权限保存到session中，方便系统使用。
+     *          session ，      。
      * 
      * @param array $aclArray
      * @access public
@@ -105,7 +105,7 @@ class SC {
     }
 
     /**
-     * 返回保存在session中的用户权限信息
+     *      session        
      *
      * @access public
      */
@@ -115,7 +115,7 @@ class SC {
     }
 
     /**
-     * 把所有的权限保存到session中。
+     *          session 。
      * 
      * @access public
      * @return true|false
@@ -126,7 +126,7 @@ class SC {
     }
 
     /**
-     * 返回保存在session中的所有权限信息
+     *      session        
      *
      * @access public
      */

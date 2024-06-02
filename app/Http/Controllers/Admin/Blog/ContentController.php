@@ -11,7 +11,7 @@ use App\Libraries\Js;
 use App\Http\Controllers\Admin\Controller;
 
 /**
- * 登录相关
+ *     
  *
  * 
  */
@@ -35,7 +35,7 @@ class ContentController extends Controller
     }
 
     /**
-     * 增加文章
+     *     
      *
      * @access public
      */
@@ -48,7 +48,7 @@ class ContentController extends Controller
     }
 
     /**
-     * 增加文章入库处理
+     *         
      *
      * @access private
      */
@@ -65,7 +65,7 @@ class ContentController extends Controller
     }
 
     /**
-     * Delete文章
+     * Delete  
      *
      * @access public
      */
@@ -79,7 +79,7 @@ class ContentController extends Controller
     }
 
     /**
-     * 编辑文章
+     *     
      *
      * @access public
      */
@@ -99,10 +99,10 @@ class ContentController extends Controller
     }
 
     /**
-     * 取回当前文章的所属分类
+     *            
      *
-     * @param  array $articleInfo 当前文章的信息
-     * @return array              整合后的当前文章信息
+     * @param  array $articleInfo        
+     * @return array                        
      */
     private function joinArticleClassify($articleInfo)
     {
@@ -117,10 +117,10 @@ class ContentController extends Controller
     }
 
     /**
-     * 取回当前文章的所属标签
+     *            
      *
-     * @param  array $articleInfo 当前文章的信息
-     * @return array              整合后的当前文章信息
+     * @param  array $articleInfo        
+     * @return array                        
      */
     private function joinArticleTags($articleInfo)
     {
@@ -135,7 +135,7 @@ class ContentController extends Controller
     }
 
     /**
-     * 编辑文章入库处理
+     *         
      *
      * @access private
      */
@@ -161,7 +161,7 @@ class ContentController extends Controller
     }
 
     /**
-     * 把文章关联到推荐位
+     *          
      */
     public function position()
     {

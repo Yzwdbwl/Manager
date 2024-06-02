@@ -6,14 +6,14 @@ use App\Widget\Admin\AbstractBase;
 use App\Services\Admin\Acl\Acl;
 
 /**
- * 用户组列表小组件
+ *         
  *
  *  
  */
 class Group extends AbstractBase
 {
     /**
-     * 用户组列表编辑操作
+     *          
      *
      * @access public
      */
@@ -28,7 +28,7 @@ class Group extends AbstractBase
     }
 
     /**
-     * 用户组列表Delete操作
+     *      Delete  
      *
      * @access public
      */
@@ -43,7 +43,7 @@ class Group extends AbstractBase
     }
 
     /**
-     * 用户组列表Delete操作
+     *      Delete  
      *
      * @access public
      */
@@ -58,7 +58,7 @@ class Group extends AbstractBase
     }
 
     /**
-     * 面包屑中的按钮
+     *        
      *
      * @access public
      */

@@ -3,7 +3,7 @@
 use Lang;
 
 /**
- * sphinx处理
+ * sphinx  
  *
  *  
  */
@@ -31,7 +31,7 @@ class Sphinx
     private $sphinxPort = 9312;
 
     /**
-     * 初始化sphinx客户端
+     *    sphinx   
      */
     public function initSphinxClient()
     {

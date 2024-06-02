@@ -1,21 +1,21 @@
 <?php namespace App\Services\Admin;
 
 /**
- * 树形结构处理类
+ *        
  *
  * 
  */
 class Tree
 {
     /**
-     * 用来标题子菜单的
+     *         
      * 
      * @var string
      */
     static public $son = 'son';
     
     /**
-     * 返回子树的key
+     *      key
      *
      * @access public
      */
@@ -25,7 +25,7 @@ class Tree
     }
 
     /**
-     * 格式化数据源，令到可以符合树形结构算法
+     *       ，            
      *
      * @access public
      */
@@ -41,7 +41,7 @@ class Tree
     }
 
     /**
-     * 生成树形结构
+     *       
      *
      * @access public
      */
@@ -54,12 +54,12 @@ class Tree
     }
 
     /**
-     * 递归select中的option下拉表单，用于权限增加和编辑
+     *   select  option    ，         
      * 
-     * @param  array $datas 数据源
-     * @param  array $id 已经选择的option值
-     * @param  array $prefix 下拉表单的线
-     * @return html 返回组装好的option代码
+     * @param  array $datas    
+     * @param  array $id      option 
+     * @param  array $prefix       
+     * @return html       option  
      */
     static public function dropDownSelect(array $datas, $id = 0, $prefix = '')
     {
@@ -67,7 +67,7 @@ class Tree
         
         foreach($datas as $key => $value)
         {
-            //如果超过了第三层的话，跳过
+            //          ，  
             if(substr_count($prefix.$value['name'], '／') > 2) continue;
 
             $line = $prefix.$value['name'].'／';

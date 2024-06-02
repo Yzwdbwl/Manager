@@ -6,14 +6,14 @@ use App\Libraries\Spliter;
 use App\Services\Home\BaseProcess;
 
 /**
- * 搜索处理
+ *     
  *
  *  
  */
 class Process extends BaseProcess
 {
     /**
-     * 初始化sphinx客户端
+     *    sphinx   
      */
     public function sphinxSearch($keyword)
     {
@@ -23,7 +23,7 @@ class Process extends BaseProcess
     }
 
     /**
-     * 处理sphinx的返回结果
+     *   sphinx     
      */
     private function prepareSphinxResult($result)
     {
@@ -38,7 +38,7 @@ class Process extends BaseProcess
     }
 
     /**
-     * 取得keyword的unicode码
+     *   keyword unicode 
      * 
      * @param  string $keyword
      * @return string        

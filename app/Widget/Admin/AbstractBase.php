@@ -5,56 +5,56 @@ namespace App\Widget\Admin;
 use App\Services\Admin\Acl\Acl;
 
 /**
- * 小组件
+ *    
  *
  *  
  */
 Abstract class AbstractBase
 {
     /**
-     * 权限处理类对象
+     *        
      *
      * @var object
      */
     protected $acl;
 
     /**
-     * 传入过来的数据
+     *        
      * 
      * @var array
      */
     protected $data;
 
     /**
-     * 当前module
+     *   module
      * 
      * @var string
      */
     protected $module;
 
     /**
-     * 当前class
+     *   class
      * 
      * @var string
      */
     protected $class;
 
     /**
-     * 当前function
+     *   function
      * 
      * @var string
      */
     protected $function;
 
     /**
-     * 标识是否有权限
+     *        
      *
      * @var boolean
      */
     protected $hasPermission;
 
     /**
-     * 初始化
+     *    
      */
     public function __construct()
     {
@@ -62,11 +62,11 @@ Abstract class AbstractBase
     }
 
     /**
-     * 设置当前请求的module,class,function
+     *        module,class,function
      *
-     * @param string $class 类
-     * @param string $function 函数
-     * @param string $module 模块
+     * @param string $class  
+     * @param string $function   
+     * @param string $module   
      * @access public
      * @return object $this
      */
@@ -79,7 +79,7 @@ Abstract class AbstractBase
     }
 
     /**
-     * 设置传进来的额外的数据
+     *            
      * 
      * @param array $data
      * @return object $this
@@ -91,9 +91,9 @@ Abstract class AbstractBase
     }
 
     /**
-     * 检测是否有权限
+     *        
      *
-     * @param string $type 取值为Acl::GROUP_LEVEL_TYPE_LEVEL, Acl::GROUP_LEVEL_TYPE_USER, Acl::GROUP_LEVEL_TYPE_GROUP
+     * @param string $type    Acl::GROUP_LEVEL_TYPE_LEVEL, Acl::GROUP_LEVEL_TYPE_USER, Acl::GROUP_LEVEL_TYPE_GROUP
      * @access protected
      */
     protected function checkPermission($type = NULL)

@@ -6,14 +6,14 @@ use App\Widget\Admin\AbstractBase;
 use App\Services\Admin\Acl\Acl as AclManager;
 
 /**
- * 权限列表小组件
+ *        
  *
  *  
  */
 class Acl extends AbstractBase
 {
     /**
-     * 权限列表编辑操作
+     *         
      *
      * @access public
      */
@@ -28,7 +28,7 @@ class Acl extends AbstractBase
     }
 
     /**
-     * 权限列表Delete操作
+     *     Delete  
      *
      * @access public
      */
@@ -43,7 +43,7 @@ class Acl extends AbstractBase
     }
 
     /**
-     * 面包屑中的按钮
+     *        
      *
      * @access public
      */
@@ -58,7 +58,7 @@ class Acl extends AbstractBase
     }
 
     /**
-     * 排序的按钮
+     *      
      *
      * @access public
      */
@@ -72,18 +72,18 @@ class Acl extends AbstractBase
     }
 
     /**
-     * 子项目用到的key
+     *       key
      *
      * @var string
      */
     private $son;
 
     /**
-     * 递归select中的option下拉表单，用于权限增加和编辑
+     *   select  option    ，         
      *
-     * @param  array $datas 数据源
-     * @param  mixed $prefix 下拉表单的线，只能传false
-     * @return html 返回组装好的option代码
+     * @param  array $datas    
+     * @param  mixed $prefix       ，   false
+     * @return html       option  
      */
     public function acllist(array $datas, $pid, $prefix = false)
     {

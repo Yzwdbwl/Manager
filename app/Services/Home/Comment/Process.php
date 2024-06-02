@@ -6,14 +6,14 @@ use App\Libraries\Js;
 use App\Services\Home\BaseProcess;
 
 /**
- * 评论相关处理
+ *       
  *
  *  
  */
 class Process extends BaseProcess
 {
     /**
-     * 整理相关的评论Id，用于查询相关评论信息
+     *        Id，          
      */
     public function prepareReplyIds($commentList)
     {
@@ -29,7 +29,7 @@ class Process extends BaseProcess
     }
 
     /**
-     * 附加相关的数据到评论中
+     *            
      */
     public function joinReplyComments($commentList, $replyComments)
     {
@@ -42,7 +42,7 @@ class Process extends BaseProcess
     }
 
     /**
-     * 从相关评论中根据key拿回详细的信息
+     *         key       
      */
     private function findReplyContents($replyIdsString, $replyComments)
     {
@@ -66,7 +66,7 @@ class Process extends BaseProcess
     }
 
     /**
-     * 增加评论
+     *     
      */
     public function addComment($data)
     {

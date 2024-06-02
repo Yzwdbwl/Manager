@@ -3,19 +3,19 @@
 namespace App\Libraries;
 
 /**
- * 加密
+ *   
  *
  * 
  */
 class Crypt
 {
     /**
-     * 加密函数，单独使用
+     *     ，    
      *
-     * @param string $string 所要加密的字符
-     * @param string $operation 加密还是解密
-     * @param string $key 加密所要的key
-     * @param string $expiry 生存时间
+     * @param string $string        
+     * @param string $operation       
+     * @param string $key      key
+     * @param string $expiry     
      */
     static public function cryptcode($string, $operation = 'DECODE', $key = '', $expiry = 0)
     {

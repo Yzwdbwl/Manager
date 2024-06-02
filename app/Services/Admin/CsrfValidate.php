@@ -7,7 +7,7 @@ use Illuminate\Support\Str;
 class CsrfValidate {
 
     /**
-     * 由于系统默认的get请求不支持验证csrf，所以这里手动的来验证
+     *        get       csrf，          
      */
     public function tokensMatch()
     {

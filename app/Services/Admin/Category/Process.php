@@ -7,28 +7,28 @@ use App\Services\Admin\Category\Validate\Category as CategoryValidate;
 use App\Services\Admin\BaseProcess;
 
 /**
- * 文章分类处理
+ *       
  *
  *  
  */
 class Process extends BaseProcess
 {
     /**
-     * 分类模型
+     *     
      * 
      * @var object
      */
     private $categoryModel;
 
     /**
-     * 分类表单验证对象
+     *         
      * 
      * @var object
      */
     private $categoryValidate;
 
     /**
-     * 初始化
+     *    
      *
      * @access public
      */
@@ -39,7 +39,7 @@ class Process extends BaseProcess
     }
 
     /**
-     * 增加新的分类
+     *       
      *
      * @param array $data
      * @access public
@@ -56,7 +56,7 @@ class Process extends BaseProcess
     }
 
     /**
-     * Delete分类
+     * Delete  
      * 
      * @param array $ids
      * @access public
@@ -71,7 +71,7 @@ class Process extends BaseProcess
     }
 
     /**
-     * 编辑分类
+     *     
      *
      * @param array $data
      * @access public
@@ -87,7 +87,7 @@ class Process extends BaseProcess
     }
 
     /**
-     * 取得分类列表信息
+     *         
      */
     public function unDeleteCategory()
     {

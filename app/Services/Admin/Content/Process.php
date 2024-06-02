@@ -14,35 +14,35 @@ use App\Libraries\Spliter;
 use App\Services\Admin\BaseProcess;
 
 /**
- * 文章处理
+ *     
  *
  *  
  */
 class Process extends BaseProcess
 {
     /**
-     * 文章模型
+     *     
      *
      * @var object
      */
     private $contentModel;
 
     /**
-     * 文章副表模型
+     *       
      *
      * @var object
      */
     private $contentDetailModel;
 
     /**
-     * 文章表单验证对象
+     *         
      *
      * @var object
      */
     private $contentValidate;
 
     /**
-     * 初始化
+     *    
      *
      * @access public
      */
@@ -53,7 +53,7 @@ class Process extends BaseProcess
     }
 
     /**
-     * 增加新的文章
+     *       
      *
      * @param string $data
      * @access public
@@ -91,7 +91,7 @@ class Process extends BaseProcess
     }
 
     /**
-     * 编辑文章，因为使用了事务，如果没有成功请手动抛出异常
+     *     ，       ，             
      *
      * @param string $data
      * @access public
@@ -131,10 +131,10 @@ class Process extends BaseProcess
         return true;
     }
     /**
-     * 保存到主表，因为使用了事务，如果没有成功请手动抛出异常
+     *      ，       ，             
      *
      * @param  array $data
-     * @return int 自增的ID
+     * @return int    ID
      */
     private function saveContent(\App\Services\Admin\Content\Param\ContentSave $data, $object)
     {
@@ -153,9 +153,9 @@ class Process extends BaseProcess
         return $insertObject->id;
     }
     /**
-     * Delete文章，因为使用了事务，如果没有成功请手动抛出异常
+     * Delete  ，       ，             
      *
-     * @param array $ids 要Delete的文章的id
+     * @param array $ids  Delete    id
      * @access public
      * @return boolean true|false
      */
@@ -193,10 +193,10 @@ class Process extends BaseProcess
 
 
     /**
-     * 保存到主表，因为使用了事务，如果没有成功请手动抛出异常
+     *      ，       ，             
      *
      * @param  array $data
-     * @return int 自增的ID
+     * @return int    ID
      */
     private function updateContent(\App\Services\Admin\Content\Param\ContentSave $data, $id)
     {

@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Auth;
 use Request, Config;
 use \App\Services\Admin\MCAManager;
 /**
- * 菜单小组件
+ *      
  *
  *  
  */
@@ -65,7 +65,7 @@ class Common
     }
 
     /**
-     * 功能地图
+     *     
      */
     public function menumap()
     {

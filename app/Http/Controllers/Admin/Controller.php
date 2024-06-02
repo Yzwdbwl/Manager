@@ -8,7 +8,7 @@ use App\Services\Admin\ActionLog\Mark;
 abstract class Controller extends BaseController
 {
     /**
-     * 检测表单篡改
+     *       
      * 
      * @return true|exception
      */
@@ -18,7 +18,7 @@ abstract class Controller extends BaseController
     }
 
     /**
-     * 启用操作日志记录
+     *         
      */
     protected function setActionLog($extDatas = [])
     {

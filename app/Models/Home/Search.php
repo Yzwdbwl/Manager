@@ -11,24 +11,24 @@ use Illuminate\Pagination\LengthAwarePaginator;
 class Search extends Model
 {
     /**
-     * 文章未Delete的标识
+     *    Delete   
      */
     CONST IS_DELETE_NO = 1;
 
     /**
-     * 文章发布的标识
+     *        
      */
     CONST STATUS_YES = 1;
 
     /**
-     * 文章数据表名
+     *       
      *
      * @var string
      */
     protected $table = 'artice';
 
     /**
-     * 表前缀
+     *    
      *
      * @var string
      */
@@ -42,7 +42,7 @@ class Search extends Model
     private $dictModelObject;
 
     /**
-     * 临时保存，避免多次查询
+     *     ，      
      *
      * @var [type]
      */

@@ -6,33 +6,33 @@ use App\Services\Admin\SC;
 use App\Services\Admin\Tree;
 
 /**
- * 菜单小组件
+ *      
  *
  *  
  */
 class Menu
 {
     /**
-     * 菜单信息
+     *     
      *
      * @var array
      */
     protected $list;
 
     /**
-     * 菜单信息
+     *     
      *
      * @var array
      */
     protected $menuTree;
 
     /**
-     * 标志菜单不显示
+     *        
      */
     CONST DISABLE_NONE = 0;
 
     /**
-     * 处理左边的菜单
+     *        
      */
     public function leftMenu()
     {
@@ -41,7 +41,7 @@ class Menu
     }
 
     /**
-     * 内容区域的菜单
+     *        
      */
     public function contentMenu()
     {
@@ -50,7 +50,7 @@ class Menu
     }
 
     /**
-     * 返回ztree插件所需的结点，目前只支持到三级
+     *   ztree       ，        
      */
     public function ztreeNode()
     {
@@ -68,7 +68,7 @@ class Menu
     }
 
     /**
-     * 是不是第二级父菜单
+     *          
      *
      * @return boolean
      */
@@ -82,7 +82,7 @@ class Menu
     }
 
     /**
-     * 取回登录所保存的权限信息并生成树形结构
+     *                    
      */
     protected function generalData()
     {
@@ -95,7 +95,7 @@ class Menu
     }
 
     /**
-     * 返回内容区域的菜单
+     *          
      */
     protected function getContentMenu()
     {

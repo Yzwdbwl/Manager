@@ -4,20 +4,20 @@ use Validator, Lang;
 use App\Services\Admin\BaseValidate;
 
 /**
- * 表单验证
+ *     
  *
  *  
  */
 class Content extends BaseValidate
 {
     /**
-     * 增加文章的时候的表单验证
+     *             
      *
      * @access public
      */
     public function add(\App\Services\Admin\Content\Param\ContentSave $data)
     {
-        // 创建验证规则
+        //       
         $rules = array(
             'name' => 'required',
             'subtitle' => 'required',
@@ -26,7 +26,7 @@ class Content extends BaseValidate
             'status' => 'required',
         );
 
-        // 自定义验证消息
+        //        
         $messages = array(
             'name.required' => Lang::get('content.name_empty'),
             'subtitle.required' => Lang::get('content.subtitle_empty'),
@@ -35,7 +35,7 @@ class Content extends BaseValidate
             'status.required' => Lang::get('content.status_empty')
         );
 
-        //开始验证
+        //    
         $validator = Validator::make($data->toArray(), $rules, $messages);
         if($validator->fails())
         {
@@ -46,7 +46,7 @@ class Content extends BaseValidate
     }
 
     /**
-     * 编辑文章的时候的表单验证
+     *             
      *
      * @access public
      */

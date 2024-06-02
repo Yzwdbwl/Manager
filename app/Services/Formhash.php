@@ -5,16 +5,16 @@ namespace App\Services;
 use Request, Session;
 
 /**
- * 主要用于防止表单篡改
+ *           
  *
  *
  */
 class Formhash
 {
     /**
-     * 缓存需要验证的信息
+     *          
      * 
-     * @param void $data 所要验证的数据，必须以最后提交的数据的数据结构一致。
+     * @param void $data        ，                 。
      * @return string
      */
     public function hash($data)
@@ -26,7 +26,7 @@ class Formhash
     }
 
     /**
-     * 校验表单
+     *     
      */
     public function checkFormHash()
     {
